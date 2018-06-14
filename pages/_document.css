@@ -1,0 +1,28 @@
+/* stylelint-disable-next-line selector-max-combinators */
+:global :root {
+	--BACKGROUND: #0C1011;
+	--BACKGROUND_DARK: #0C1011;
+	--BORDER: #2B3838;
+	--TEXT_DEFAULT: #C9C8C7;
+	--WHITE: #FFF;
+	--YELLOW: #FFCD35;
+}
+
+/* stylelint-disable-next-line selector-max-combinators, selector-max-type */
+:global body {
+	background: var(--BACKGROUND);
+	color: var(--TEXT_DEFAULT);
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 0.5px;
+	line-height: 1.8rem;
+	margin: 0;
+	padding: 0;
+	/* stylelint-disable-next-line property-no-vendor-prefix */
+	-webkit-text-size-adjust: 100%;
+}
+
+/* stylelint-disable-next-line selector-max-combinators, selector-max-type */
+:global body,
+:global button {
+	font-family: Lato, sans-serif;
+}

@@ -1,0 +1,21 @@
+.main {
+	height: 960px;
+}
+
+.h2 {
+	color: var(--WHITE);
+	font-size: 46px;
+	font-weight: normal;
+	margin: 0 0 96px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.text {
+	font-size: 18px;
+	font-weight: lighter;
+	line-height: 220%;
+	margin: 0 auto 96px;
+	text-align: center;
+	width: 90%;
+}

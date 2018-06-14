@@ -1,0 +1,24 @@
+.link {
+	color: var(--TEXT_DEFAULT);
+	cursor: pointer;
+	font-size: 18px;
+	letter-spacing: 0;
+	text-decoration: none;
+	text-shadow: 0 0 1px rgba(12, 16, 17, 0.75);
+	text-transform: uppercase;
+	z-index: 100;
+}
+
+/* stylelint-disable-next-line selector-max-combinators */
+.link + .link { margin-left: 48px }
+
+.link:focus,
+.link:hover {
+	color: var(--WHITE);
+}
+
+.linkActive,
+.linkActive:focus,
+.linkActive:hover {
+	color: var(--YELLOW);
+}

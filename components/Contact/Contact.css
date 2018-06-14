@@ -1,0 +1,61 @@
+.left {
+	text-align: left;
+	width: 100%;
+}
+
+.right {
+	text-align: right;
+	text-transform: uppercase;
+	width: 100%;
+}
+
+.h2 {
+	color: var(--WHITE);
+	font-size: 30px;
+	font-weight: lighter;
+	letter-spacing: -1px;
+	margin: 24px auto;
+	text-transform: uppercase;
+}
+
+.text {
+	font-size: 18px;
+	font-weight: lighter;
+	margin: 0;
+	width: 500px;
+}
+
+.phone {
+	color: var(--WHITE);
+	font-size: 30px;
+	font-weight: lighter;
+	text-decoration: none;
+}
+
+.phone:focus,
+.phone:hover {
+	text-decoration: underline;
+}
+
+.email {
+	color: var(--YELLOW);
+	font-size: 18px;
+	font-weight: lighter;
+	text-decoration: none;
+}
+
+.email:focus,
+.email:hover {
+	text-decoration: underline;
+}
+
+.address {
+	color: #827F7F;
+	font-style: normal;
+	font-weight: lighter;
+	margin: 32px 0 0;
+}
+
+.mailing {
+	color: var(--WHITE);
+}

@@ -1,0 +1,10 @@
+/* stylelint-disable-next-line selector-max-combinators, selector-max-type */
+.main path {
+	fill: currentColor;
+}
+
+.yellow { color: #FCE449; }
+.orange { color: #FF973B; }
+.red { color: #FD4136; }
+.blue { color: #268AD5; }
+.green { color: #58D761; }

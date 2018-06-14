@@ -1,0 +1,28 @@
+.main {
+	align-items: center;
+	background: none;
+	border: 2px solid var(--WHITE);
+	color: var(--WHITE);
+	cursor: pointer;
+	display: flex;
+	font-size: 22px;
+	font-weight: lighter;
+	height: 64px;
+	justify-content: center;
+	outline: none;
+	text-align: center;
+	text-transform: uppercase;
+	transition: border-color 250ms ease, color 250ms ease;
+	width: 300px;
+}
+
+.main:focus,
+.main:hover {
+	border-color: var(--YELLOW);
+	color: var(--YELLOW);
+}
+
+.text {
+	display: block;
+	height: 30px;
+}

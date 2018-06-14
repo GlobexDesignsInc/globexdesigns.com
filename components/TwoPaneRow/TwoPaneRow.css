@@ -1,0 +1,23 @@
+.main {
+	background: var(--BACKGROUND_DARK);
+	height: 322px;
+}
+
+.center {
+	flex-direction: row;
+}
+
+.left,
+.right {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	height: 274px;
+	justify-content: center;
+	text-align: center;
+	width: 50%;
+}
+
+.left {
+	border-right: 1px solid var(--BORDER);
+}

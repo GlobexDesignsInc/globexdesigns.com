@@ -1,0 +1,29 @@
+.main {
+	height: 960px;
+}
+
+.h2 {
+	color: var(--WHITE);
+	font-size: 46px;
+	font-weight: normal;
+	margin: 0 auto 32px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.icons {
+	align-items: center;
+	display: flex;
+	justify-content: space-between;
+	margin: 64px auto;
+	width: 90%;
+}
+
+.text {
+	font-size: 18px;
+	font-weight: lighter;
+	line-height: 220%;
+	margin: 0 auto 96px;
+	text-align: center;
+	width: 90%;
+}

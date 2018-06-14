@@ -1,0 +1,15 @@
+.h2 {
+	color: var(--WHITE);
+	font-size: 30px;
+	font-weight: lighter;
+	letter-spacing: -1px;
+	margin: 24px auto;
+	text-transform: uppercase;
+}
+
+.text {
+	font-size: 18px;
+	font-weight: lighter;
+	margin: 0 auto;
+	width: 400px;
+}
