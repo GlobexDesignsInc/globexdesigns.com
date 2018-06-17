@@ -3,7 +3,7 @@
 const Deploy = require('@globexdesigns/deploy');
 
 const D = new Deploy({
-	host: '138.68.241.10',
+	host: '159.65.64.167',
 	private_key_path: '/home/globex/.ssh/id_rsa',
 	target_dir: '/var/www',
 	user: 'root',
