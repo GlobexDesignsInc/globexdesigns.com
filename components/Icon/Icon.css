@@ -17,7 +17,6 @@
 /* Mobile */
 @media (max-width: 1000px) {
 	.main {
-		height: 32px;
-		width: 32px;
+		transform: scale(0.5);
 	}
 }
