@@ -13,3 +13,19 @@
 	margin: 0 auto;
 	width: 400px;
 }
+
+/* Mobile */
+@media (max-width: 1000px) {
+	.h2 {
+		font-size: 18px;
+		margin: 16px auto;
+	}
+
+	.text {
+		font-size: 12px;
+	}
+
+	.img {
+		width: 80%;
+	}
+}

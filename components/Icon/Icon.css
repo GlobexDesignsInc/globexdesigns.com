@@ -1,3 +1,8 @@
+.main {
+	height: 64px;
+	width: 64px;
+}
+
 /* stylelint-disable-next-line selector-max-combinators, selector-max-type */
 .main path {
 	fill: currentColor;
@@ -8,3 +13,11 @@
 .red { color: #FD4136; }
 .blue { color: #268AD5; }
 .green { color: #58D761; }
+
+/* Mobile */
+@media (max-width: 1000px) {
+	.main {
+		height: 32px;
+		width: 32px;
+	}
+}

@@ -30,7 +30,7 @@ export default class Nav extends PureComponent<PropsType> {
 		}];
 
 		return (
-			<nav>
+			<nav className={styles.main}>
 				{links.map(this._renderLink)}
 			</nav>
 		);

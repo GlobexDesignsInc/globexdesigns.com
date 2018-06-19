@@ -10,6 +10,17 @@
 .text {
 	font-size: 18px;
 	font-weight: lighter;
-	margin: 0 auto;
-	width: 400px;
+	margin: 0 64px;
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+	.h2 {
+		font-size: 18px;
+	}
+
+	.text {
+		font-size: 12px;
+		margin: 0 16px;
+	}
 }

@@ -23,7 +23,7 @@ export default class Icon extends PureComponent<PropsType> {
 		);
 
 		return (
-			<svg className={classes} height={64} width={64}>
+			<svg className={classes} viewBox='0 0 64 64'>
 				{this._renderIcon()}
 			</svg>
 		);

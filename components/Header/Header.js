@@ -39,6 +39,7 @@ export default class Header extends PureComponent<PropsType, StateType> {
 				<div className={styles.inner}>
 					<img
 						alt='Globex Designs, Inc.'
+						className={styles.logo}
 						src='/static/logo.png' />
 					<Nav />
 				</div>

@@ -21,6 +21,7 @@ export default class Projects extends PureComponent<PropsType> {
 				right={(
 					<img
 						alt='Globex Designs Projects'
+						className={styles.img}
 						src='/static/projects.png' />
 				)} />
 		);

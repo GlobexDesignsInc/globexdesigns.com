@@ -22,7 +22,7 @@
 		"react-dom": "16.4.1",
 		"react-google-maps": "9.4.5",
 		"react-progressive-image": "0.3.0",
-		"react-scroll": "^1.7.9",
+		"react-scroll": "1.7.9",
 		"react-tippy": "1.2.2"
 	},
 	"devDependencies": {

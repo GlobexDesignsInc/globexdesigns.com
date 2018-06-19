@@ -5641,7 +5641,7 @@ react-progressive-image@0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/react-progressive-image/-/react-progressive-image-0.3.0.tgz#dd28e299c474216f2d640def5d4bc5b09aea7457"
 
-react-scroll@^1.7.9:
+react-scroll@1.7.9:
   version "1.7.9"
   resolved "https://registry.yarnpkg.com/react-scroll/-/react-scroll-1.7.9.tgz#83e6bfc1e10a7b7ff7dbc34008b76737501aba6b"
   dependencies:

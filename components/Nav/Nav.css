@@ -1,3 +1,14 @@
+.main {
+	margin-top: 0;
+}
+
+/* Mobile */
+@media screen and (max-width: 1000px) {
+	.main {
+		margin: 16px;
+	}
+}
+
 .link {
 	color: var(--TEXT_DEFAULT);
 	cursor: pointer;

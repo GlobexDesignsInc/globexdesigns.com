@@ -15,7 +15,18 @@
 	font-size: 18px;
 	font-weight: lighter;
 	line-height: 220%;
-	margin: 0 auto 96px;
+	margin: 0 64px 96px;
 	text-align: center;
 	width: 90%;
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+	.h2 {
+		font-size: 28px;
+	}
+
+	.text {
+		font-size: 14px;
+	}
 }

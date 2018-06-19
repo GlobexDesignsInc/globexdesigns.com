@@ -59,3 +59,20 @@
 .mailing {
 	color: var(--WHITE);
 }
+
+/* Mobile */
+@media (max-width: 1000px) {
+	.left,
+	.right {
+		text-align: center;
+	}
+
+	.h2 {
+		font-size: 18px;
+		margin: 16px auto;
+	}
+
+	.text {
+		font-size: 12px;
+	}
+}

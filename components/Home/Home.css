@@ -31,3 +31,22 @@
 	font-size: 30px;
 	font-weight: lighter;
 }
+
+/* Mobile */
+@media (max-width: 1000px) {
+	.main {
+		line-height: 80%;
+	}
+
+	.one {
+		font-size: 14px
+	}
+
+	.two {
+		font-size: 28px;
+	}
+
+	.three {
+		font-size: 16px;
+	}
+}

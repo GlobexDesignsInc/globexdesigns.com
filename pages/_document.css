@@ -14,7 +14,7 @@
 	color: var(--TEXT_DEFAULT);
 	-webkit-font-smoothing: antialiased;
 	letter-spacing: 0.5px;
-	line-height: 1.8rem;
+	line-height: 180%;
 	margin: 0;
 	padding: 0;
 	/* stylelint-disable-next-line property-no-vendor-prefix */
