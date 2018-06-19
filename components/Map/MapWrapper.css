@@ -1,5 +1,5 @@
 .container {
-	height: 960px
+	height: 960px;
 }
 
 .loading {
@@ -8,4 +8,11 @@
 
 .map {
 	height: 100%
+}
+
+/* Mobile */
+@media (max-width: 1000px) {
+	.container {
+		display: none;
+	}
 }

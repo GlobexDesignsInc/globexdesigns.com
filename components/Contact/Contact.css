@@ -21,8 +21,7 @@
 .text {
 	font-size: 18px;
 	font-weight: lighter;
-	margin: 0;
-	width: 500px;
+	margin: 0 32px 0 0;
 }
 
 .phone {
@@ -74,5 +73,6 @@
 
 	.text {
 		font-size: 12px;
+		margin: 0 32px;
 	}
 }

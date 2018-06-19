@@ -20,7 +20,7 @@ export default class MyDocument extends Document {
 					<meta content='next.js' name='generator' />
 					<meta content='General' name='rating' />
 					<meta content='#0C1011' name='theme-color' />
-					<meta content='width=device-width,initial-scale=1,shrink-to-fit=no' name='viewport' />
+					<meta content='width=device-width,initial-scale=1' name='viewport' />
 
 					<meta content='Globex Designs, Inc.' property='article:author' />
 					<meta content={desc} property='og:description' />

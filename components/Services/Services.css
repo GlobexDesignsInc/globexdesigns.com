@@ -37,4 +37,8 @@
 	.text {
 		font-size: 14px;
 	}
+
+	.icons {
+		width: auto;
+	}
 }
