@@ -15,7 +15,7 @@ export default class Projects extends PureComponent<PropsType> {
 				left={(
 					<Fragment>
 						<h2 className={styles.h2}>Our Work</h2>
-						<p className={styles.text}>We have over 100 projects in our portfolio and many happy clients for all over the world.</p>
+						<p className={styles.text}>We have over 100 projects in our portfolio and many happy clients from all over the world.</p>
 					</Fragment>
 				)}
 				right={(

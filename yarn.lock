@@ -660,9 +660,9 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@globexdesigns/deploy@0.2.0":
-  version "0.2.0"
-  resolved "https://registry.yarnpkg.com/@globexdesigns/deploy/-/deploy-0.2.0.tgz#b895377d07ff322f76df8211e56c480413c47117"
+"@globexdesigns/deploy@0.2.3":
+  version "0.2.3"
+  resolved "https://registry.yarnpkg.com/@globexdesigns/deploy/-/deploy-0.2.3.tgz#e488b95438818aecbf3fca8e8466520a892c13d6"
   dependencies:
     archiver "2.1.1"
     chalk "^2.4.1"
