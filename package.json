@@ -4,7 +4,7 @@
 	"license": "MIT",
 	"scripts": {
 		"build": "next build",
-		"deploy": "node scripts/deploy.js",
+		"deploy": "yarn build && node scripts/deploy.js",
 		"dev": "node server.js",
 		"eslint": "eslint-cumul8 components pages scripts next.config.js server.js",
 		"flow": "flow",
