@@ -8,6 +8,7 @@
 		"dev": "node server.js",
 		"eslint": "eslint-cumul8 components pages scripts next.config.js server.js",
 		"flow": "flow",
+		"flow-typed:update": "flow-typed install --ignoreDeps dev",
 		"start": "NODE_ENV=production node server.js",
 		"stylelint": "stylelint-cumul8 components/**/*.css pages/**/*.css",
 		"test": "yarn flow && yarn eslint && yarn stylelint"
@@ -15,12 +16,12 @@
 	"dependencies": {
 		"@zeit/next-css": "0.2.0",
 		"classnames": "2.2.6",
+		"compression": "1.7.2",
 		"express": "4.16.3",
 		"greenlock-express": "2.1.6",
 		"next": "6.0.3",
 		"react": "16.4.1",
 		"react-dom": "16.4.1",
-		"react-google-maps": "9.4.5",
 		"react-progressive-image": "0.3.0",
 		"react-scroll": "1.7.9",
 		"react-tippy": "1.2.2"
@@ -29,7 +30,7 @@
 		"@globexdesigns/deploy": "0.2.4",
 		"babel-plugin-transform-flow-strip-types": "6.22.0",
 		"eslint-config-cumul8": "8.0.0",
-		"flow-bin": "0.74.0",
+		"flow-bin": "0.75.0",
 		"flow-typed": "2.4.0",
 		"stylelint-config-cumul8": "2.1.0"
 	}

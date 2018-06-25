@@ -8,11 +8,11 @@ import About from './../components/About';
 import Contact from './../components/Contact';
 import Header from './../components/Header';
 import Home from './../components/Home';
+import Map from './../components/Map';
 import Passions from './../components/Passions';
 import Projects from './../components/Projects';
 import {Element as ScrollElement} from 'react-scroll';
 import Services from './../components/Services';
-import {Wrapper} from './../components/Map';
 
 type PropsType = {};
 
@@ -37,7 +37,7 @@ export default class Index extends PureComponent<PropsType> {
 				<ScrollElement name='contact'>
 					<Contact />
 				</ScrollElement>
-				<Wrapper />
+				<Map />
 			</Fragment>
 		);
 	}

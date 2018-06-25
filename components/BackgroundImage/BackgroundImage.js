@@ -6,7 +6,7 @@ import ProgressiveImage from 'react-progressive-image';
 import styles from './BackgroundImage.css';
 
 type PropsType = {
-	children: Node,
+	children?: Node,
 	height: number,
 	placeholder: string,
 	src: string,
