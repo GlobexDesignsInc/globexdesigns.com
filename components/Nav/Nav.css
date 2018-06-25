@@ -37,6 +37,7 @@
 		font-size: 14px;
 	}
 
+	/* stylelint-disable-next-line selector-max-combinators */
 	.link + .link {
 		margin-left: 32px
 	}
