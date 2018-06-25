@@ -12,8 +12,8 @@ type PropsType = {
 	src: string,
 };
 
-export default class BakgroundImage extends PureComponent<PropsType> {
-	static displayName = 'BakgroundImage';
+export default class BackgroundImage extends PureComponent<PropsType> {
+	static displayName = 'BackgroundImage';
 
 	render (): Element<typeof ProgressiveImage> {
 		const {
