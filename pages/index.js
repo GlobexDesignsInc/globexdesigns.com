@@ -11,13 +11,28 @@ import Home from './../components/Home';
 import Map from './../components/Map';
 import Passions from './../components/Passions';
 import Projects from './../components/Projects';
+import ReactGA from 'react-ga';
 import {Element as ScrollElement} from 'react-scroll';
 import Services from './../components/Services';
 
 type PropsType = {};
 
+const __DEV__ = process.env.NODE_ENV !== 'production';
+
 export default class Index extends PureComponent<PropsType> {
 	static displayName = 'Index';
+
+	componentDidMount () {
+		ReactGA.initialize('UA-250654-1', {
+			debug: __DEV__,
+		});
+
+		if (window && window.location) {
+			const pageName = window.location.pathname + window.location.search;
+			ReactGA.set({page: pageName});
+			ReactGA.pageview(pageName);
+		}
+	}
 
 	render (): Element<typeof Fragment> {
 		return (
