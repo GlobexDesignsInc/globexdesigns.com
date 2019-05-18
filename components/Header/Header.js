@@ -1,55 +1,45 @@
 // @flow
 
-import React, {type Element, PureComponent} from 'react';
+import React, {type Element, memo, useEffect, useState} from 'react';
 import classnames from 'classnames';
-import Nav from './../Nav';
+import Nav from '../Nav';
 import styles from './Header.css';
 
-type PropsType = {};
+export const Header = (): Element<'div'> => {
+	const [isScrolled, setIsScrolled] = useState(
+		Boolean(typeof window !== 'undefined' && window.scrollY > 0)
+	);
 
-type StateType = {
-	isScrolled: boolean,
+	useEffect((): any => {
+		const _handleScroll = (): any => setIsScrolled(
+			Boolean(typeof window !== 'undefined' && window.scrollY > 0)
+		);
+
+		window.addEventListener('scroll', _handleScroll);
+
+		return () => {
+			window.removeEventListener('scroll', _handleScroll);
+		};
+	});
+
+	const classes = classnames(
+		styles.main,
+		isScrolled ? styles.isScrolled : null
+	);
+
+	return (
+		<div className={classes}>
+			<div className={styles.inner}>
+				<img
+					alt='Globex Designs, Inc.'
+					className={styles.logo}
+					src='/static/logo.png' />
+				<Nav />
+			</div>
+		</div>
+	);
 };
 
-export default class Header extends PureComponent<PropsType, StateType> {
-	static displayName = 'Header';
+Header.displayName = 'Header';
 
-	state = {
-		isScrolled: Boolean(typeof window !== 'undefined' && window.scrollY > 0),
-	};
-
-	componentDidMount () {
-		window.addEventListener('scroll', this._handleScroll);
-	}
-
-	componentWillUnmount () {
-		window.removeEventListener('scroll', this._handleScroll);
-	}
-
-	render (): Element<'div'> {
-		const {isScrolled} = this.state;
-
-		const classes = classnames(
-			styles.main,
-			isScrolled ? styles.isScrolled : null
-		);
-
-		return (
-			<div className={classes}>
-				<div className={styles.inner}>
-					<img
-						alt='Globex Designs, Inc.'
-						className={styles.logo}
-						src='/static/logo.png' />
-					<Nav />
-				</div>
-			</div>
-		);
-	}
-
-	_handleScroll = () => {
-		this.setState({
-			isScrolled: Boolean(typeof window !== 'undefined' && window.scrollY > 0),
-		});
-	};
-}
+export default memo<{||}>(Header);

@@ -1,45 +1,31 @@
 // @flow
 
-import React, {type Element, PureComponent} from 'react';
+import React, {type Element, memo} from 'react';
 import {Link} from 'react-scroll';
 import styles from './Nav.css';
 
-type PropsType = {};
-
-type LinkType = {
+type LinkType = {|
 	name: string,
 	to: string,
-};
+|};
 
-export default class Nav extends PureComponent<PropsType> {
-	static displayName = 'Nav';
+const LINKS = [{
+	name: 'Home',
+	to: 'home',
+}, {
+	name: 'About',
+	to: 'about',
+}, {
+	name: 'Services',
+	to: 'services',
+}, {
+	name: 'Contact',
+	to: 'contact',
+}];
 
-	render (): Element<'nav'> {
-		const links = [{
-			name: 'Home',
-			to: 'home',
-		}, {
-			name: 'About',
-			to: 'about',
-		}, {
-			name: 'Services',
-			to: 'services',
-		}, {
-			name: 'Contact',
-			to: 'contact',
-		}];
-
-		return (
-			<nav className={styles.main}>
-				{links.map(this._renderLink)}
-			</nav>
-		);
-	}
-
-	_renderLink = (
-		link: LinkType
-	): Element<typeof Link> => {
-		return (
+export const Nav = (): Element<'nav'> => (
+	<nav className={styles.main}>
+		{LINKS.map((link: LinkType): Element<typeof Link> => (
 			<Link
 				activeClass={styles.linkActive}
 				className={styles.link}
@@ -50,6 +36,10 @@ export default class Nav extends PureComponent<PropsType> {
 				to={link.to}>
 				{link.name}
 			</Link>
-		);
-	};
-}
+		))}
+	</nav>
+);
+
+Nav.displayName = 'Nav';
+
+export default memo<{||}>(Nav);

@@ -1,19 +1,15 @@
 // @flow
 
-import React, {type Element, PureComponent} from 'react';
-import BackgroundImage from './../BackgroundImage';
+import React, {type Element, memo} from 'react';
+import BackgroundImage from '../BackgroundImage';
 
-type PropsType = {};
+export const Map = (): Element<typeof BackgroundImage> => (
+	<BackgroundImage
+		height={960}
+		placeholder='map_small.jpg'
+		src='map.jpg' />
+);
 
-export default class Map extends PureComponent<PropsType> {
-	static displayName = 'Map';
+Map.displayName = 'Map';
 
-	render (): Element<typeof BackgroundImage> {
-		return (
-			<BackgroundImage
-				height={960}
-				placeholder='map_small.jpg'
-				src='map.jpg' />
-		);
-	}
-}
+export default memo<{||}>(Map);

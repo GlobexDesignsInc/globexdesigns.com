@@ -1,46 +1,66 @@
 // @flow
 
-// TODO: Blocked by https://github.com/zeit/next-plugins/issues/149
-// import './_document.css';
 import Document, {Head, Main, NextScript} from 'next/document';
 import React, {type Element} from 'react';
+import {type Context} from 'next';
+import Helmet from 'react-helmet';
 
+const SITE_AUTHOR = 'Globex Designs, Inc.';
 const SITE_NAME = 'Globex Designs, Inc. - Vancouver Web Design & Media Production';
 const SITE_DESC = 'Globex Designs provides web design, graphics, development and media production from Vancouver, Canada.';
+const TWITTER_USER = '@globex';
 
-export default class MyDocument extends Document {
+const DEFAULT_META = [
+	{charSet: 'utf-8'},
+	{content: 'ie=edge', httpEquiv: 'x-ua-compatible'},
+	{name: 'viewport', content: 'width=device-width,initial-scale=1,shrink-to-fit=no'},
+
+	{content: SITE_NAME, name: 'application-name'},
+	{content: SITE_DESC, name: 'description'},
+	{content: 'next.js', name: 'generator'},
+	{content: 'General', name: 'rating'},
+	{content: '#222', name: 'theme-color'},
+
+	{content: SITE_AUTHOR, property: 'article:author'},
+	{content: SITE_DESC, property: 'og:description'},
+	{content: 'en_US', property: 'og:locale'},
+	{content: SITE_NAME, property: 'og:site_name'},
+	{content: SITE_NAME, property: 'og:title'},
+	{content: 'website', property: 'og:type'},
+
+	{content: 'summary', property: 'twitter:card'},
+	{content: TWITTER_USER, property: 'twitter:creator'},
+	{content: SITE_DESC, property: 'twitter:description'},
+	{content: SITE_NAME, property: 'twitter:title'},
+];
+
+export default class _document extends Document {
+	static async getInitialProps (...args: Context): Promise<any> {
+		const documentProps = await super.getInitialProps(...args);
+		return {...documentProps, helmet: Helmet.renderStatic()};
+	}
+
 	render (): Element<'html'> {
+		const {helmet} = this.props;
+		const htmlArgs = helmet.htmlAttributes.toComponent();
+		const bodyArgs = helmet.bodyAttributes.toComponent();
+		const headElements = Object.keys(this.props.helmet)
+			.filter((el: string): boolean => el !== 'htmlAttributes' && el !== 'bodyAttributes')
+			.map((el: string): Element<any> => helmet[el].toComponent());
+
 		return (
-			<html lang='en'>
+			// eslint-disable-next-line jsx-a11y/html-has-lang
+			<html {...htmlArgs}>
 				<Head>
-					<meta charSet='utf-8' />
-					<meta content='ie=edge' httpEquiv='x-ua-compatible' />
-					<meta content='Globex Designs, Inc.' name='application-name' />
-					<meta content={SITE_DESC} name='description' />
-					<meta content='next.js' name='generator' />
-					<meta content='General' name='rating' />
-					<meta content='#0C1011' name='theme-color' />
-					<meta content='width=device-width,initial-scale=1' name='viewport' />
-
-					<meta content='Globex Designs, Inc.' property='article:author' />
-					<meta content={SITE_DESC} property='og:description' />
-					<meta content='en_US' property='og:locale' />
-					<meta content={SITE_NAME} property='og:site_name' />
-					<meta content={SITE_NAME} property='og:title' />
-					<meta content='website' property='og:type' />
-
-					<meta content='summary' name='twitter:card' />
-					<meta content='@globex' name='twitter:creator' />
-					<meta content={SITE_DESC} name='twitter:description' />
-					<meta content='Globex Designs Twitter' name='twitter:title' />
-
-					<link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' />
+					<Helmet
+						htmlAttributes={{lang: 'en'}}
+						meta={DEFAULT_META}
+						title={SITE_NAME} />
+					{headElements}
+					<link href='https://fonts.googleapis.com/css?family=Montserrat:200,400' rel='stylesheet' />
 					<link href='/static/favicon.ico' rel='icon' type='image/x-icon' />
-					<link href='/_next/static/style.css' rel='stylesheet' />
-
-					<title>{SITE_NAME}</title>
 				</Head>
-				<body>
+				<body {...bodyArgs}>
 					<Main />
 					<NextScript />
 				</body>

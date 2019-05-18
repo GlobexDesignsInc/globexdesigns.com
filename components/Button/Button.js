@@ -1,35 +1,37 @@
 // @flow
 
-import React, {type Element, type Node, PureComponent} from 'react';
+import React, {type Element, memo, type Node} from 'react';
 import classnames from 'classnames';
 import {ScrollLink} from 'react-scroll';
 import styles from './Button.css';
 
-type PropsType = {
+type PropsType = {|
 	children?: Node,
 	className?: ?string,
+	offset?: number,
+	smooth?: boolean,
 	to: string,
+|};
+
+export const Button = ({
+	children,
+	className,
+	...other
+}: PropsType): Element<'button'> => {
+	const classes = classnames(
+		styles.main,
+		className
+	);
+
+	return (
+		<button className={classes} {...other}>
+			<span className={styles.text}>
+				{children}
+			</span>
+		</button>
+	);
 };
 
-export class Button extends PureComponent<PropsType> {
-	static displayName = 'Button';
+Button.displayName = 'Button';
 
-	render (): Element<'button'> {
-		const {children, className, ...other} = this.props;
-
-		const classes = classnames(
-			styles.main,
-			className
-		);
-
-		return (
-			<button className={classes} {...other}>
-				<span className={styles.text}>
-					{children}
-				</span>
-			</button>
-		);
-	}
-}
-
-export default ScrollLink(Button);
+export default memo<PropsType>(ScrollLink(Button));

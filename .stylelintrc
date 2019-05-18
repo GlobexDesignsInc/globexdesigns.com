@@ -1,3 +1,6 @@
 {
-  "extends": "stylelint-config-cumul8"
+  "extends": "stylelint-config-cumul8",
+  "rules": {
+      "color-no-hex": null
+  }
 }
