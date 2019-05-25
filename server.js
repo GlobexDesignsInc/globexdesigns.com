@@ -1,31 +1,54 @@
 /* eslint-disable flowtype/require-valid-file-annotation, import/no-commonjs */
 /* eslint-disable flowtype/require-return-type, flowtype/require-parameter-type */
 
-const express = require('express');
+const compression = require('compression');
 const greenlock = require('greenlock-express');
 const http = require('http');
 const http2 = require('http2');
+const Koa = require('koa');
+const koaConnect = require('koa-connect');
+const koaSend = require('koa-send');
 const next = require('next');
 const redirectHttps = require('redirect-https');
+const Router = require('koa-router');
 
+const ONE_YEAR = 1000 * 60 * 60 * 24 * 365;
+const PORT = parseInt(process.env.PORT, 10) || 3000;
 const __DEV__ = process.env.NODE_ENV !== 'production';
+
 const app = next({dev: __DEV__});
 const handle = app.getRequestHandler();
 
 app.prepare().then(() => {
-	// Dev server uses express and none of the greenlock and HTTP2 stuff
+	const server = new Koa();
+	const router = new Router();
+
+	// Enable gzip compression
+	server.use(koaConnect(compression()));
+
+	router.get('/robots.txt', (ctx) => koaSend(ctx, ctx.path, {
+		maxAge: ONE_YEAR,
+	}));
+
+	router.get('*', async (ctx) => {
+		await handle(ctx.req, ctx.res);
+		ctx.respond = false;
+	});
+
+	server.use(async (ctx, next) => {
+		ctx.res.statusCode = 200;
+		await next();
+	});
+
+	server.use(router.routes());
+
+	// Dev server doesn't use any of the greenlock and HTTP2 stuff, so we can
+	// immediately serve the application.
 	if (__DEV__) {
-		const server = express();
-
-		// All routes go to the next app
-		server.get('*', (req, res) => handle(req, res));
-
-		const port = parseInt(process.env.PORT, 10) || 3000;
-
-		return server.listen(port, (err) => {
+		return server.listen(PORT, (err) => {
 			if (err) throw err;
 			// eslint-disable-next-line no-console
-			console.log(`> Ready on http://localhost:${port}`);
+			console.log(`> Ready on http://localhost:${PORT}`);
 		});
 	}
 
@@ -33,7 +56,7 @@ app.prepare().then(() => {
 	const gLock = greenlock.create({
 		approveDomains (opts, certs, cb) {
 			opts.domains = certs && certs.altnames || opts.domains;
-			opts.email = 'globexdesigns@gmail.com';
+			opts.email = 'info@globexdesigns.com';
 			opts.agreeTos = true;
 
 			cb(null, {
@@ -48,12 +71,7 @@ app.prepare().then(() => {
 	});
 
 	// Handle HTTPS connections with HTTP/2
-	const server = http2.createSecureServer(gLock.tlsOptions);
-
-	// All routes go to the next app
-	server.on('request', (req, res) => {
-		return app.render(req, res, '/', req.query);
-	});
+	const http2Server = http2.createSecureServer(gLock.tlsOptions, server.callback());
 
 	// Handle HTTP connnections
 	const acmeChallengeHandler = gLock.middleware(redirectHttps());
@@ -63,7 +81,7 @@ app.prepare().then(() => {
 	});
 
 	// Handle HTTPS connections
-	return server.listen(443, (err) => {
+	return http2Server.listen(443, (err) => {
 		if (err) throw err;
 		// eslint-disable-next-line no-console
 		console.log('Listening for http2 requests on 443');
