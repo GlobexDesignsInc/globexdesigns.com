@@ -2,11 +2,13 @@
 	host: '159.65.64.167',
 	private_key_path: '/home/globex/.ssh/id_rsa',
 	sources: [
+		'.babelrc',
 		'.next',
 		'static',
 		'package.json',
 		'robots.txt',
 		'server.js',
+		'start.js',
 		'yarn.lock'
 	],
 	target_dir: '/var/www/globexdesigns.com',
