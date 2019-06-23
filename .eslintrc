@@ -1,5 +1,5 @@
 {
-    "extends": "eslint-config-cumul8",
+    "extends": "eslint-config-globex",
     "rules": {
         "flowtype/no-unused-expressions": "off",
         "lines-between-class-members": "off",

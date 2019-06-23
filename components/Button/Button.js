@@ -1,5 +1,7 @@
 // @flow
 
+/* eslint-disable react/jsx-props-no-spreading */
+
 import React, {type Element, memo, type Node} from 'react';
 import classnames from 'classnames';
 import {ScrollLink} from 'react-scroll';
