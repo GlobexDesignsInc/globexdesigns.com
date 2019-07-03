@@ -1,6 +1,6 @@
-// @flow
+// @flow strict
 
-/* eslint-disable react/jsx-props-no-spreading */
+/* eslint-disable react/jsx-props-no-spreading, jsx-a11y/html-has-lang */
 
 import Document, {Head, Main, NextScript} from 'next/document';
 import React, {type Element} from 'react';
@@ -22,7 +22,6 @@ export default class _document extends Document {
 			.map((el: string): Element<any> => helmet[el].toComponent());
 
 		return (
-			// eslint-disable-next-line jsx-a11y/html-has-lang
 			<html {...htmlArgs}>
 				<Head>
 					{headElements}

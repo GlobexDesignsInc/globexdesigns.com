@@ -1,4 +1,4 @@
-// @flow
+// @flow strict
 
 import React, {type Element, Fragment, memo} from 'react';
 import styles from './Projects.css';

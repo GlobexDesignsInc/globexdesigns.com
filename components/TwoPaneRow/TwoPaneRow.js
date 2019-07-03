@@ -1,4 +1,4 @@
-// @flow
+// @flow strict
 
 import React, {type Element, memo, type Node} from 'react';
 import CenteredContent from '../CenteredContent';
