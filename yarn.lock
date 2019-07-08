@@ -7010,10 +7010,10 @@ ripemd160@^2.0.0, ripemd160@^2.0.1:
     hash-base "^3.0.0"
     inherits "^2.0.1"
 
-rocketry@0.6.0:
-  version "0.6.0"
-  resolved "https://registry.yarnpkg.com/rocketry/-/rocketry-0.6.0.tgz#28f9e8833f046b54e1b392b37b28aa010b877d28"
-  integrity sha512-/m0FTvpiFpFAsiOBcdnsXRBQWYlARiZK8wJduRflzvYbbB8jarr/Xa1RtdltF1zn/wQdpu04DD6m+TS2i+CgXA==
+rocketry@0.6.1:
+  version "0.6.1"
+  resolved "https://registry.yarnpkg.com/rocketry/-/rocketry-0.6.1.tgz#ece28483428ba5b25c42a857210936c35954e692"
+  integrity sha512-4tz5xMVmzpNwpxdVIzBRPgGPzadUiOTfTaH6KBfn7Ew939PBzi3mMxT9K23mkMz8RQEwuPnKi/XEqk5ZE11+7w==
   dependencies:
     "@hapi/joi" "^15.1.0"
     archiver "^3.0.0"
