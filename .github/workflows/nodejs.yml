@@ -1,6 +1,6 @@
 name: Build, Test & Deploy
 
-on: [push]
+on: push
 
 jobs:
   build:
@@ -13,10 +13,12 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: 12.x
-    - name: test
+    - name: Test
       run: |
         yarn install --pure-lockfile
         yarn test
-    - name: deploy
+    - name: Deploy
+      env:
+        ROCKETRY_PW: ${{ secrets.ROCKETRY_PW }}
       run: |
-        ROCKETRY_PW=${ROCKETRY_PW} yarn deploy
+        yarn deploy
