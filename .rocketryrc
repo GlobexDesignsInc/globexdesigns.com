@@ -1,6 +1,5 @@
 {
 	host: '159.65.64.167',
-	private_key_path: '/home/globex/.ssh/id_rsa',
 	sources: [
 		'.babelrc',
 		'.next',
@@ -12,5 +11,4 @@
 		'yarn.lock'
 	],
 	target_dir: '/var/www/globexdesigns.com',
-	user: 'root',
 }
