@@ -1,5 +1,7 @@
 # globexdesigns.com
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/GlobexDesignsInc/globexdesigns.com.svg)](https://greenkeeper.io/)
+
 > The official website for Globex Designs, Inc.
 
 - Built with `nextjs`
