@@ -44,6 +44,6 @@
 		"lint-staged": "9.2.5",
 		"prettier-package-json": "2.1.0",
 		"rocketry": "0.6.3",
-		"stylelint-config-globex": "1.1.1"
+		"stylelint-config-globex": "1.1.2"
 	}
 }
