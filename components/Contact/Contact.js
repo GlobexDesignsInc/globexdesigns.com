@@ -1,7 +1,7 @@
 // @flow strict
 
-import React, {type Element, memo} from 'react';
-import styles from './Contact.css';
+import React, {type Element} from 'react';
+import styles from './Contact.module.css';
 import TwoPaneRow from '../TwoPaneRow';
 
 export const Contact = (): Element<typeof TwoPaneRow> => (
@@ -38,4 +38,4 @@ export const Contact = (): Element<typeof TwoPaneRow> => (
 
 Contact.displayName = 'Contact';
 
-export default memo<{||}>(Contact);
+export default Contact;

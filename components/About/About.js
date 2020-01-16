@@ -1,10 +1,10 @@
 // @flow strict
 
-import React, {type Element, memo} from 'react';
+import React, {type Element} from 'react';
 import BackgroundImage from '../BackgroundImage';
 import Button from '../Button';
 import CenteredContent from '../CenteredContent';
-import styles from './About.css';
+import styles from './About.module.css';
 
 export const About = (): Element<typeof BackgroundImage> => (
 	<BackgroundImage
@@ -25,4 +25,4 @@ export const About = (): Element<typeof BackgroundImage> => (
 
 About.displayName = 'About';
 
-export default memo<{||}>(About);
+export default About;

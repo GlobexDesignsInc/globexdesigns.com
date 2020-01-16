@@ -1,10 +1,10 @@
 // @flow strict
 
-import React, {type Element, memo} from 'react';
+import React, {type Element} from 'react';
 import BackgroundImage from '../BackgroundImage';
 import Button from '../Button';
 import CenteredContent from '../CenteredContent';
-import styles from './Home.css';
+import styles from './Home.module.css';
 
 export const Home = (): Element<typeof BackgroundImage> => (
 	<BackgroundImage
@@ -26,4 +26,4 @@ export const Home = (): Element<typeof BackgroundImage> => (
 
 Home.displayName = 'Home';
 
-export default memo<{||}>(Home);
+export default Home;

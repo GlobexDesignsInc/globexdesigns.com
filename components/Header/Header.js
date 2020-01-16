@@ -1,9 +1,9 @@
 // @flow strict
 
-import React, {type Element, memo, useEffect, useState} from 'react';
+import React, {type Element, useEffect, useState} from 'react';
 import classnames from 'classnames';
 import Nav from '../Nav';
-import styles from './Header.css';
+import styles from './Header.module.css';
 
 export const Header = (): Element<'div'> => {
 	const [isScrolled, setIsScrolled] = useState(
@@ -33,7 +33,7 @@ export const Header = (): Element<'div'> => {
 				<img
 					alt='Globex Designs, Inc.'
 					className={styles.logo}
-					src='/static/logo.png' />
+					src='/logo.png' />
 				<Nav />
 			</div>
 		</div>
@@ -42,4 +42,4 @@ export const Header = (): Element<'div'> => {
 
 Header.displayName = 'Header';
 
-export default memo<{||}>(Header);
+export default Header;

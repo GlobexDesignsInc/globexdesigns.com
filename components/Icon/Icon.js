@@ -2,7 +2,7 @@
 
 import React, {type Element, memo} from 'react';
 import classnames from 'classnames';
-import styles from './Icon.css';
+import styles from './Icon.module.css';
 
 type PropsType = {|
 	className?: ?string,

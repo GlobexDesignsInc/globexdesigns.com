@@ -1,8 +1,8 @@
 // @flow strict
 
-import React, {type Element, Fragment, memo} from 'react';
+import React, {type Element, Fragment} from 'react';
 import Icon from '../Icon';
-import styles from './Passions.css';
+import styles from './Passions.module.css';
 import TwoPaneRow from '../TwoPaneRow';
 
 export const Passions = (): Element<typeof TwoPaneRow> => (
@@ -25,4 +25,4 @@ export const Passions = (): Element<typeof TwoPaneRow> => (
 
 Passions.displayName = 'Passions';
 
-export default memo<{||}>(Passions);
+export default Passions;

@@ -3,9 +3,9 @@
 	sources: [
 		'.babelrc',
 		'.next',
-		'static',
 		'package.json',
 		'pages',
+		'public',
 		'robots.txt',
 		'server.js',
 		'start.js',

@@ -1,8 +1,8 @@
 // @flow strict
 
-import React, {type Element, memo} from 'react';
+import React, {type Element} from 'react';
 import {Link} from 'react-scroll';
-import styles from './Nav.css';
+import styles from './Nav.module.css';
 
 type LinkType = {|
 	name: string,
@@ -42,4 +42,4 @@ export const Nav = (): Element<'nav'> => (
 
 Nav.displayName = 'Nav';
 
-export default memo<{||}>(Nav);
+export default Nav;

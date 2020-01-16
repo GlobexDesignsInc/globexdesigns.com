@@ -3,7 +3,7 @@
 import React, {type Element, memo, type Node} from 'react';
 import classnames from 'classnames';
 import ProgressiveImage from 'react-progressive-image';
-import styles from './BackgroundImage.css';
+import styles from './BackgroundImage.module.css';
 
 type PropsType = {|
 	children?: Node,
@@ -18,12 +18,12 @@ export const BackgroundImage = ({
 	placeholder,
 	src,
 }: PropsType): Element<typeof ProgressiveImage> => {
-	const placeholderUrl = `/static/${placeholder}`;
+	const placeholderUrl = `/${placeholder}`;
 
 	return (
 		<ProgressiveImage
 			placeholder={placeholderUrl}
-			src={`/static/${src}`}>
+			src={`/${src}`}>
 			{(
 				src: string,
 				loading: boolean

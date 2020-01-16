@@ -2,7 +2,7 @@
 
 import React, {type Element, memo, type Node} from 'react';
 import CenteredContent from '../CenteredContent';
-import styles from './TwoPaneRow.css';
+import styles from './TwoPaneRow.module.css';
 
 type PropsType = {|
 	left: Node,

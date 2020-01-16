@@ -1,7 +1,7 @@
 // @flow strict
 
-import React, {type Element, Fragment, memo} from 'react';
-import styles from './Projects.css';
+import React, {type Element, Fragment} from 'react';
+import styles from './Projects.module.css';
 import TwoPaneRow from '../TwoPaneRow';
 
 export const Projects = (): Element<typeof TwoPaneRow> => (
@@ -16,10 +16,10 @@ export const Projects = (): Element<typeof TwoPaneRow> => (
 			<img
 				alt='Globex Designs Projects'
 				className={styles.img}
-				src='/static/projects.png' />
+				src='/projects.png' />
 		)} />
 );
 
 Projects.displayName = 'Projects';
 
-export default memo<{||}>(Projects);
+export default Projects;

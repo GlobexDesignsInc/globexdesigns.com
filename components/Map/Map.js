@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {type Element, memo} from 'react';
+import React, {type Element} from 'react';
 import BackgroundImage from '../BackgroundImage';
 
 export const Map = (): Element<typeof BackgroundImage> => (
@@ -12,4 +12,4 @@ export const Map = (): Element<typeof BackgroundImage> => (
 
 Map.displayName = 'Map';
 
-export default memo<{||}>(Map);
+export default Map;

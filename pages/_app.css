@@ -1,5 +1,4 @@
-/* stylelint-disable-next-line selector-max-combinators */
-:global :root {
+:root {
 	--BACKGROUND: #0C1011;
 	--BACKGROUND_DARK: #0C1011;
 	--BORDER: #2B3838;
@@ -8,8 +7,8 @@
 	--YELLOW: #FFCD35;
 }
 
-/* stylelint-disable-next-line selector-max-combinators, selector-max-type */
-:global body {
+/* stylelint-disable-next-line selector-max-type */
+body {
 	background: var(--BACKGROUND);
 	color: var(--TEXT_DEFAULT);
 	-webkit-font-smoothing: antialiased;
@@ -21,8 +20,8 @@
 	-webkit-text-size-adjust: 100%;
 }
 
-/* stylelint-disable-next-line selector-max-combinators, selector-max-type */
-:global body,
-:global button {
+/* stylelint-disable-next-line selector-max-type */
+body,
+button {
 	font-family: Lato, sans-serif;
 }

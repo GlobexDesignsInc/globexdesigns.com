@@ -1,11 +1,11 @@
 // @flow strict
 
-import React, {type Element, memo} from 'react';
+import React, {type Element} from 'react';
 import BackgroundImage from '../BackgroundImage';
 import Button from '../Button';
 import CenteredContent from '../CenteredContent';
 import Icon from '../Icon';
-import styles from './Services.css';
+import styles from './Services.module.css';
 
 export const Services = (): Element<typeof BackgroundImage> => (
 	<BackgroundImage
@@ -33,4 +33,4 @@ export const Services = (): Element<typeof BackgroundImage> => (
 
 Services.displayName = 'Services';
 
-export default memo<{||}>(Services);
+export default Services;
