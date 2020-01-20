@@ -2,6 +2,7 @@
     "extends": "eslint-config-globex",
     "rules": {
         "flowtype/no-unused-expressions": "off",
+        "jsx-a11y/html-has-lang": "off",
         "lines-between-class-members": "off",
         "max-len": "off",
         "no-process-env": "off",
