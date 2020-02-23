@@ -25,6 +25,7 @@ export const DEFAULT_META = [
 	{content: SITE_NAME, property: 'og:site_name'},
 	{content: SITE_NAME, property: 'og:title'},
 	{content: 'website', property: 'og:type'},
+	{content: 'https://www.globexdesigns.com', property: 'og:url'},
 
 	{content: 'summary', property: 'twitter:card'},
 	{content: TWITTER_USER, property: 'twitter:creator'},

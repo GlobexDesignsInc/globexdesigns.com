@@ -21,8 +21,3 @@
 	border-color: var(--YELLOW);
 	color: var(--YELLOW);
 }
-
-.text {
-	display: block;
-	height: 30px;
-}

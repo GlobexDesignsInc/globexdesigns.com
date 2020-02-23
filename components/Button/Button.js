@@ -27,9 +27,7 @@ export const Button = ({
 
 	return (
 		<button className={classes} {...other}>
-			<span className={styles.text}>
-				{children}
-			</span>
+			{children}
 		</button>
 	);
 };
