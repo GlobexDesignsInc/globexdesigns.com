@@ -2,6 +2,7 @@
 
 import React, {type Element, useEffect, useState} from 'react';
 import classnames from 'classnames';
+import Logo from '../Logo';
 import Nav from '../Nav';
 import styles from './Header.module.css';
 
@@ -30,10 +31,7 @@ export const Header = (): Element<'div'> => {
 	return (
 		<div className={classes}>
 			<div className={styles.inner}>
-				<img
-					alt='Globex Designs, Inc.'
-					className={styles.logo}
-					src='/logo.png' />
+				<Logo className={styles.logo} />
 				<Nav />
 			</div>
 		</div>
