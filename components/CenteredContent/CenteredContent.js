@@ -4,10 +4,10 @@ import React, {type Element, memo, type Node} from 'react';
 import classnames from 'classnames';
 import styles from './CenteredContent.module.css';
 
-type PropsType = {|
+type PropsType = {
 	children: Node,
 	className?: ?string,
-|};
+};
 
 export const CenteredContent = ({
 	children,

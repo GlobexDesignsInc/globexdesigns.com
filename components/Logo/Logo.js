@@ -2,9 +2,9 @@
 
 import React, {type Element} from 'react';
 
-type PropsType = {|
+type PropsType = {
 	+className?: ?string,
-|};
+};
 
 export const Logo = ({className}: PropsType): Element<'svg'> => (
 	<svg className={className} viewBox='0 0 2004 343' xmlns='http://www.w3.org/2000/svg'>

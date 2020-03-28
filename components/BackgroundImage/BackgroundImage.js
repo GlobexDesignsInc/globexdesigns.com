@@ -5,12 +5,12 @@ import classnames from 'classnames';
 import ProgressiveImage from 'react-progressive-image';
 import styles from './BackgroundImage.module.css';
 
-type PropsType = {|
+type PropsType = {
 	children?: Node,
 	height: number,
 	placeholder: string,
 	src: string,
-|};
+};
 
 export const BackgroundImage = ({
 	children,

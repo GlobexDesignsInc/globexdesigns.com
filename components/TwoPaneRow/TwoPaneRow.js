@@ -4,10 +4,10 @@ import React, {type Element, memo, type Node} from 'react';
 import CenteredContent from '../CenteredContent';
 import styles from './TwoPaneRow.module.css';
 
-type PropsType = {|
+type PropsType = {
 	left: Node,
 	right: Node,
-|};
+};
 
 export const TwoPaneRow = ({
 	left,

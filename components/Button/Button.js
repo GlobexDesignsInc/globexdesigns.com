@@ -7,13 +7,13 @@ import classnames from 'classnames';
 import {ScrollLink} from 'react-scroll';
 import styles from './Button.module.css';
 
-type PropsType = {|
+type PropsType = {
 	children?: Node,
 	className?: ?string,
 	offset?: number,
 	smooth?: boolean,
 	to: string,
-|};
+};
 
 export const Button = ({
 	children,

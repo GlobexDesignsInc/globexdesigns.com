@@ -4,10 +4,10 @@ import React, {type Element} from 'react';
 import {Link} from 'react-scroll';
 import styles from './Nav.module.css';
 
-type LinkType = {|
+type LinkType = {
 	name: string,
 	to: string,
-|};
+};
 
 const LINKS = [{
 	name: 'Home',

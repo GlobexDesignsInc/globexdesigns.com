@@ -4,11 +4,11 @@ import React, {type Element, memo} from 'react';
 import classnames from 'classnames';
 import styles from './Icon.module.css';
 
-type PropsType = {|
+type PropsType = {
 	className?: ?string,
 	color: 'yellow' | 'orange' | 'red' | 'blue' | 'green',
 	name: 'design' | 'technology' | 'web' | 'identity' | 'dev' | 'music',
-|};
+};
 
 export const Icon = ({
 	className,
