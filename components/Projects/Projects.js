@@ -20,6 +20,4 @@ export const Projects = (): Element<typeof TwoPaneRow> => (
 		)} />
 );
 
-Projects.displayName = 'Projects';
-
 export default Projects;

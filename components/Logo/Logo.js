@@ -27,6 +27,4 @@ export const Logo = ({className}: PropsType): Element<'svg'> => (
 	</svg>
 );
 
-Logo.displayName = 'Logo';
-
 export default Logo;

@@ -62,6 +62,4 @@ export const BackgroundImage = ({
 	);
 };
 
-BackgroundImage.displayName = 'BackgroundImage';
-
 export default memo<PropsType>(BackgroundImage);

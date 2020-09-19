@@ -23,6 +23,4 @@ export const About = (): Element<typeof BackgroundImage> => (
 	</BackgroundImage>
 );
 
-About.displayName = 'About';
-
 export default About;

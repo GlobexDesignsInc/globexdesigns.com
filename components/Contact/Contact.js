@@ -36,6 +36,4 @@ export const Contact = (): Element<typeof TwoPaneRow> => (
 		)} />
 );
 
-Contact.displayName = 'Contact';
-
 export default Contact;

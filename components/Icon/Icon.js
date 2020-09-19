@@ -62,6 +62,4 @@ export const Icon = ({
 	);
 };
 
-Icon.displayName = 'Icon';
-
 export default memo<PropsType>(Icon);

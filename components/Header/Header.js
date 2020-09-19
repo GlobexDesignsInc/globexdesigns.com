@@ -38,6 +38,4 @@ export const Header = (): Element<'div'> => {
 	);
 };
 
-Header.displayName = 'Header';
-
 export default Header;

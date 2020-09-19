@@ -24,6 +24,4 @@ export const Home = (): Element<typeof BackgroundImage> => (
 	</BackgroundImage>
 );
 
-Home.displayName = 'Home';
-
 export default Home;

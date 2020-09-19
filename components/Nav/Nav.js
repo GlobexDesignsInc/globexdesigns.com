@@ -40,6 +40,4 @@ export const Nav = (): Element<'nav'> => (
 	</nav>
 );
 
-Nav.displayName = 'Nav';
-
 export default Nav;

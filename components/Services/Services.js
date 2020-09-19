@@ -31,6 +31,4 @@ export const Services = (): Element<typeof BackgroundImage> => (
 	</BackgroundImage>
 );
 
-Services.displayName = 'Services';
-
 export default Services;

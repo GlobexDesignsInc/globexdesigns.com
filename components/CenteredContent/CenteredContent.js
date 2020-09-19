@@ -25,6 +25,4 @@ export const CenteredContent = ({
 	);
 };
 
-CenteredContent.displayName = 'CenteredContent';
-
 export default memo<PropsType>(CenteredContent);

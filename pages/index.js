@@ -32,6 +32,4 @@ export const index = (): Element<typeof Fragment> => (
 	</Fragment>
 );
 
-index.displayName = 'index';
-
 export default index;

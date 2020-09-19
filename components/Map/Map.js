@@ -10,6 +10,4 @@ export const Map = (): Element<typeof BackgroundImage> => (
 		src='map.jpg' />
 );
 
-Map.displayName = 'Map';
-
 export default Map;

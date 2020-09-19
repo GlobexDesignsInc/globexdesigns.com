@@ -25,6 +25,4 @@ export const TwoPaneRow = ({
 	</div>
 );
 
-TwoPaneRow.displayName = 'TwoPaneRow';
-
 export default memo<PropsType>(TwoPaneRow);

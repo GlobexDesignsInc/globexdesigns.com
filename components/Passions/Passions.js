@@ -23,6 +23,4 @@ export const Passions = (): Element<typeof TwoPaneRow> => (
 		)} />
 );
 
-Passions.displayName = 'Passions';
-
 export default Passions;
