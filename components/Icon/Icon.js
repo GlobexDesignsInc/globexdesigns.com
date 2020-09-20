@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {type Element, memo} from 'react';
+import React, {type Element} from 'react';
 import classnames from 'classnames';
 import styles from './Icon.module.css';
 
@@ -62,4 +62,4 @@ export const Icon = ({
 	);
 };
 
-export default memo<PropsType>(Icon);
+export default Icon;

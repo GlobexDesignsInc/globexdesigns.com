@@ -2,7 +2,7 @@
 
 /* eslint-disable react/jsx-props-no-spreading */
 
-import React, {type Element, memo, type Node} from 'react';
+import React, {type AbstractComponent, type Element, type Node} from 'react';
 import classnames from 'classnames';
 import {ScrollLink} from 'react-scroll';
 import styles from './Button.module.css';
@@ -32,4 +32,4 @@ export const Button = ({
 	);
 };
 
-export default memo<PropsType>(ScrollLink(Button));
+export default (ScrollLink(Button): AbstractComponent<PropsType>);

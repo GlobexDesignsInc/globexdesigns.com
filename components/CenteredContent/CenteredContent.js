@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {type Element, memo, type Node} from 'react';
+import React, {type Element, type Node} from 'react';
 import classnames from 'classnames';
 import styles from './CenteredContent.module.css';
 
@@ -25,4 +25,4 @@ export const CenteredContent = ({
 	);
 };
 
-export default memo<PropsType>(CenteredContent);
+export default CenteredContent;

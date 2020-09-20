@@ -1,6 +1,6 @@
 // @flow strict
 
-import React, {type Element, memo, type Node} from 'react';
+import React, {type Element, type Node} from 'react';
 import classnames from 'classnames';
 import ProgressiveImage from 'react-progressive-image';
 import styles from './BackgroundImage.module.css';
@@ -62,4 +62,4 @@ export const BackgroundImage = ({
 	);
 };
 
-export default memo<PropsType>(BackgroundImage);
+export default BackgroundImage;
