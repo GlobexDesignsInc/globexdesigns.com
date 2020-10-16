@@ -2,8 +2,7 @@
 
 /* eslint-disable react/jsx-props-no-spreading */
 
-// $FlowExpectedError[missing-export]
-import Document, {type DocumentContext, Head, Html, Main, NextScript} from 'next/document';
+import Document, {type DocumentContext, Head, Main, NextScript} from 'next/document';
 import React, {type Element} from 'react';
 import {Helmet} from 'react-helmet';
 
@@ -24,7 +23,8 @@ export default class _document extends Document {
 		// That script tag on the end -- that's a fix for crazy FOUC bug in Chrome
 		// See https://stackoverflow.com/questions/14389566
 		return (
-			<Html {...htmlArgs}>
+			// eslint-disable-next-line jsx-a11y/html-has-lang
+			<html {...htmlArgs}>
 				<Head>
 					{headElements}
 					<link
@@ -47,7 +47,7 @@ export default class _document extends Document {
 					<NextScript />
 					<script> </script>
 				</body>
-			</Html>
+			</html>
 		);
 	}
 }
