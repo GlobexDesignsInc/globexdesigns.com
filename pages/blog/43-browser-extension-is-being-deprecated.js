@@ -39,6 +39,4 @@ export const BlogHelp = (): Element<typeof Fragment> => (
 	</Fragment>
 );
 
-BlogHelp.displayName = 'BlogHelp';
-
 export default BlogHelp;

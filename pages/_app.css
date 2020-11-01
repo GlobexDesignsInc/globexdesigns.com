@@ -1,5 +1,6 @@
 /* lato-300 - latin */
 @font-face {
+	font-display: swap;
 	font-family: Lato;
 	font-style: normal;
 	font-weight: 300;
@@ -12,6 +13,7 @@
 
 /* lato-regular - latin */
 @font-face {
+	font-display: swap;
 	font-family: Lato;
 	font-style: normal;
 	font-weight: 400;

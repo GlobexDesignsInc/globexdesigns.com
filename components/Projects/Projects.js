@@ -1,6 +1,7 @@
 // @flow strict
 
 import React, {type Element, Fragment} from 'react';
+import Image from 'next/image';
 import styles from './Projects.module.css';
 import TwoPaneRow from '../TwoPaneRow';
 
@@ -13,10 +14,12 @@ export const Projects = (): Element<typeof TwoPaneRow> => (
 			</Fragment>
 		)}
 		right={(
-			<img
+			<Image
 				alt='Globex Designs Projects'
 				className={styles.img}
-				src='/projects.png' />
+				height='245'
+				src='/projects.png'
+				width='512' />
 		)} />
 );
 

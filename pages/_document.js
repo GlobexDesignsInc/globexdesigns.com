@@ -2,17 +2,17 @@
 
 /* eslint-disable react/jsx-props-no-spreading */
 
-import Document, {type DocumentContext, Head, Main, NextScript} from 'next/document';
+import Document, {Head, Html, Main, NextScript} from 'next/document';
 import React, {type Element} from 'react';
 import {Helmet} from 'react-helmet';
 
 export default class _document extends Document {
-	static async getInitialProps (ctx: DocumentContext): Promise<any> {
+	static async getInitialProps (ctx: any): Promise<any> {
 		const initialProps = await Document.getInitialProps(ctx);
 		return {...initialProps, helmet: Helmet.renderStatic()};
 	}
 
-	render (): Element<'html'> {
+	render (): Element<typeof Html> {
 		const {helmet} = this.props;
 		const htmlArgs = helmet.htmlAttributes.toComponent();
 		const bodyArgs = helmet.bodyAttributes.toComponent();
@@ -23,8 +23,7 @@ export default class _document extends Document {
 		// That script tag on the end -- that's a fix for crazy FOUC bug in Chrome
 		// See https://stackoverflow.com/questions/14389566
 		return (
-			// eslint-disable-next-line jsx-a11y/html-has-lang
-			<html {...htmlArgs}>
+			<Html {...htmlArgs}>
 				<Head>
 					{headElements}
 					<link
@@ -47,7 +46,7 @@ export default class _document extends Document {
 					<NextScript />
 					<script> </script>
 				</body>
-			</html>
+			</Html>
 		);
 	}
 }
