@@ -8,7 +8,7 @@ import Icon from '../Icon';
 import styles from './Services.module.css';
 
 export const Services = (): Element<typeof BackgroundImage> => (
-	<BackgroundImage src='/services.jpg'>
+	<BackgroundImage alt='Services' src='/services.jpg'>
 		<CenteredContent className={styles.main}>
 			<h2 className={styles.h2}>
 				Our Services

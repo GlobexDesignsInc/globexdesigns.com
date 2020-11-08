@@ -7,7 +7,7 @@ import CenteredContent from '../CenteredContent';
 import styles from './About.module.css';
 
 export const About = (): Element<typeof BackgroundImage> => (
-	<BackgroundImage src='/about.jpg'>
+	<BackgroundImage alt='About' src='/about.jpg'>
 		<CenteredContent className={styles.main}>
 			<h2 className={styles.h2}>
 				About Us
