@@ -12,8 +12,8 @@
 }
 
 .isScrolled {
-	background: rgba(0, 0, 0, 0.5);
-	border-bottom: 1px solid var(--BORDER);
+	background: rgba(0, 0, 0, 0.9);
+	border-bottom: 1px solid var(--BORDER)
 }
 
 .inner {

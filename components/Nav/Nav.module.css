@@ -10,6 +10,7 @@
 	text-decoration: none;
 	text-shadow: 0 0 1px rgba(12, 16, 17, 0.75);
 	text-transform: uppercase;
+	transition: color 250ms ease-in-out;
 	z-index: 100;
 }
 

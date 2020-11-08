@@ -15,12 +15,11 @@
 	},
 	"dependencies": {
 		"classnames": "2.2.6",
-		"next": "10.0.1",
+		"next": "10.0.2-canary.4",
 		"react": "17.0.1",
 		"react-dom": "17.0.1",
 		"react-ga": "3.2.0",
 		"react-helmet": "6.1.0",
-		"react-progressive-image": "0.6.0",
 		"react-scroll": "1.8.1"
 	},
 	"devDependencies": {
@@ -34,6 +33,6 @@
 		"stylelint-config-globex": "2.1.1"
 	},
 	"resolutions": {
-		"webpack": "5.3.2"
+		"webpack": "5.4.0"
 	}
 }

@@ -7,10 +7,7 @@ import CenteredContent from '../CenteredContent';
 import styles from './Home.module.css';
 
 export const Home = (): Element<typeof BackgroundImage> => (
-	<BackgroundImage
-		height={960}
-		placeholder='home_small.jpg'
-		src='home.jpg'>
+	<BackgroundImage priority={true} src='/home.jpg'>
 		<CenteredContent className={styles.main}>
 			<h1 className={styles.h1}>
 				<span className={styles.one}>We are a</span>
