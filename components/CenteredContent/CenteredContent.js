@@ -5,8 +5,8 @@ import classnames from 'classnames';
 import styles from './CenteredContent.module.css';
 
 type PropsType = {
-	children: Node,
-	className?: ?string,
+	+children: Node,
+	+className?: ?string,
 };
 
 export const CenteredContent = ({

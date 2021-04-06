@@ -5,8 +5,8 @@ import CenteredContent from '../CenteredContent';
 import styles from './TwoPaneRow.module.css';
 
 type PropsType = {
-	left: Node,
-	right: Node,
+	+left: Node,
+	+right: Node,
 };
 
 export const TwoPaneRow = ({

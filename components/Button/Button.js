@@ -8,11 +8,11 @@ import {ScrollLink} from 'react-scroll';
 import styles from './Button.module.css';
 
 type PropsType = {
-	children?: Node,
-	className?: ?string,
-	offset?: number,
-	smooth?: boolean,
-	to: string,
+	+children?: Node,
+	+className?: ?string,
+	+offset?: number,
+	+smooth?: boolean,
+	+to: string,
 };
 
 export const Button = ({
