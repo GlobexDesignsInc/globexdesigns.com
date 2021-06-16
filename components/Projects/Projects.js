@@ -2,6 +2,7 @@
 
 import React, {type Element, Fragment} from 'react';
 import Image from 'next/image';
+import projectsImage from '../../public/projects.png';
 import styles from './Projects.module.css';
 import TwoPaneRow from '../TwoPaneRow';
 
@@ -18,7 +19,8 @@ export const Projects = (): Element<typeof TwoPaneRow> => (
 				alt='Globex Designs Projects'
 				className={styles.img}
 				height='245'
-				src='/projects.png'
+				placeholder='blur'
+				src={projectsImage}
 				width='512' />
 		)} />
 );

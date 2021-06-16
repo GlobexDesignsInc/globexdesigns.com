@@ -5,10 +5,11 @@ import BackgroundImage from '../BackgroundImage';
 import Button from '../Button';
 import CenteredContent from '../CenteredContent';
 import Icon from '../Icon';
+import image from '../../public/services.jpg';
 import styles from './Services.module.css';
 
 export const Services = (): Element<typeof BackgroundImage> => (
-	<BackgroundImage alt='Services' src='/services.jpg'>
+	<BackgroundImage alt='Services' image={image}>
 		<CenteredContent className={styles.main}>
 			<h2 className={styles.h2}>
 				Our Services

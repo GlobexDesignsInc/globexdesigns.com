@@ -7,15 +7,15 @@ import styles from './BackgroundImage.module.css';
 type PropsType = {
 	+alt: string,
 	+children?: Node,
+	+image: any,
 	+priority?: boolean,
-	+src: string,
 };
 
 export const BackgroundImage = ({
 	alt,
 	children,
+	image,
 	priority = false,
-	src,
 }: PropsType): Element<'div'> => (
 	<div className={styles.main}>
 		<Image
@@ -23,7 +23,7 @@ export const BackgroundImage = ({
 			layout='fill'
 			objectFit='cover'
 			priority={priority}
-			src={src} />
+			src={image} />
 		<div className={styles.children}>
 			{children}
 		</div>

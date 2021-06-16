@@ -4,10 +4,11 @@ import React, {type Element} from 'react';
 import BackgroundImage from '../BackgroundImage';
 import Button from '../Button';
 import CenteredContent from '../CenteredContent';
+import image from '../../public/about.jpg';
 import styles from './About.module.css';
 
 export const About = (): Element<typeof BackgroundImage> => (
-	<BackgroundImage alt='About' src='/about.jpg'>
+	<BackgroundImage alt='About' image={image}>
 		<CenteredContent className={styles.main}>
 			<h2 className={styles.h2}>
 				About Us
