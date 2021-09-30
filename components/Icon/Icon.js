@@ -6,8 +6,8 @@ import styles from './Icon.module.css';
 
 type PropsType = {
 	+className?: ?string,
-	+color: 'yellow' | 'orange' | 'red' | 'blue' | 'green',
-	+name: 'design' | 'technology' | 'web' | 'identity' | 'dev' | 'music',
+	+color: 'blue' | 'green' | 'orange' | 'red' | 'yellow',
+	+name: 'design' | 'dev' | 'identity' | 'music' | 'technology' | 'web',
 };
 
 export const Icon = ({
