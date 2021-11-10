@@ -1696,7 +1696,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"classnames@npm:^2.3.1":
+"classnames@npm:2.3.1":
   version: 2.3.1
   resolution: "classnames@npm:2.3.1"
   checksum: 14db8889d56c267a591f08b0834989fe542d47fac659af5a539e110cc4266694e8de86e4e3bbd271157dbd831361310a8293e0167141e80b0f03a0f175c80960
@@ -3338,18 +3338,18 @@ __metadata:
   resolution: "globexdesigns.com@workspace:."
   dependencies:
     "@babel/preset-flow": 7.16.0
-    classnames: ^2.3.1
+    classnames: 2.3.1
     eslint-config-globex: 6.0.0
     flow-bin: 0.163.0
     flow-typed: 3.4.0
     husky: 7.0.4
     lint-staged: 11.2.6
-    next: ^12.0.3
+    next: 12.0.3
     prettier-package-json: 2.6.0
-    react: ^17.0.2
-    react-dom: ^17.0.2
-    react-ga: ^3.3.0
-    react-scroll: ^1.8.4
+    react: 17.0.2
+    react-dom: 17.0.2
+    react-ga: 3.3.0
+    react-scroll: 1.8.4
     stylelint-config-globex: 3.0.0
   languageName: unknown
   linkType: soft
@@ -4754,7 +4754,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:^12.0.3":
+"next@npm:12.0.3":
   version: 12.0.3
   resolution: "next@npm:12.0.3"
   dependencies:
@@ -5683,7 +5683,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^17.0.2":
+"react-dom@npm:17.0.2":
   version: 17.0.2
   resolution: "react-dom@npm:17.0.2"
   dependencies:
@@ -5696,7 +5696,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-ga@npm:^3.3.0":
+"react-ga@npm:3.3.0":
   version: 3.3.0
   resolution: "react-ga@npm:3.3.0"
   peerDependencies:
@@ -5727,7 +5727,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-scroll@npm:^1.8.4":
+"react-scroll@npm:1.8.4":
   version: 1.8.4
   resolution: "react-scroll@npm:1.8.4"
   dependencies:
@@ -5740,7 +5740,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^17.0.2":
+"react@npm:17.0.2":
   version: 17.0.2
   resolution: "react@npm:17.0.2"
   dependencies:
