@@ -2468,7 +2468,7 @@ __metadata:
     react: 17.0.2
     react-dom: 17.0.2
     react-ga: 3.3.0
-    react-scroll: 1.8.4
+    react-scroll: 1.8.5
     stylelint-config-globex: 3.3.0
   languageName: unknown
   linkType: soft
@@ -4043,16 +4043,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-scroll@npm:1.8.4":
-  version: 1.8.4
-  resolution: "react-scroll@npm:1.8.4"
+"react-scroll@npm:1.8.5":
+  version: 1.8.5
+  resolution: "react-scroll@npm:1.8.5"
   dependencies:
     lodash.throttle: ^4.1.1
     prop-types: ^15.7.2
   peerDependencies:
     react: ^15.5.4 || ^16.0.0 || ^17.0.0
     react-dom: ^15.5.4 || ^16.0.0 || ^17.0.0
-  checksum: fd31206090e7a223989d11bd51f0f6fbc4ddfa3a218c266f2ec5698b93021187b6e2604010defa3341653bc8fdc3ddfb91c2d45a251b7c9e8e1857dc0da715f5
+  checksum: 0b7a41cc55c504b9ffddc5d13a6a2760677422c16623d197cc5f7d90ec0d5d2f521c520f97c5ed458f1db319c6281f999e84bd0d34e4043bcc2576cff8bccc74
   languageName: node
   linkType: hard
 
