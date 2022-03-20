@@ -12,7 +12,7 @@ import {Element as ScrollElement} from 'react-scroll';
 import Services from '../components/Services';
 
 export const index = (): Element<typeof Fragment> => (
-	<Fragment>
+	<>
 		<Header />
 		<ScrollElement name='home'>
 			<Home />
@@ -29,7 +29,7 @@ export const index = (): Element<typeof Fragment> => (
 			<Contact />
 		</ScrollElement>
 		<Map />
-	</Fragment>
+	</>
 );
 
 export default index;

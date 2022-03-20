@@ -20,7 +20,7 @@ export default class _app extends App {
 	render (): Element<typeof Fragment> {
 		const {Component, pageProps} = this.props;
 		return (
-			<Fragment>
+			<>
 				<Head>
 					<title>{SITE_NAME}</title>
 					<meta charSet='utf-8' />
@@ -56,7 +56,7 @@ export default class _app extends App {
 					<link href='https://www.google-analytics.com' rel='preconnect' />
 				</Head>
 				<Component {...pageProps} />
-			</Fragment>
+			</>
 		);
 	}
 }
