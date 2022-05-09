@@ -28,8 +28,8 @@ export const Contact = (): Element<typeof TwoPaneRow> => (
 					<strong className={styles.mailing}>
 						Mailing Address:
 					</strong><br />
-					14471 32b Ave<br />
-					Surrey, BC, V4P 0A2<br />
+					16092 28A Ave<br />
+					Surrey, BC, V3Z 3Y6<br />
 					Canada
 				</address>
 			</div>
