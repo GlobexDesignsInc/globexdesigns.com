@@ -23,7 +23,7 @@
 		"react-scroll": "1.8.7"
 	},
 	"devDependencies": {
-		"@babel/preset-flow": "7.16.7",
+		"@babel/preset-flow": "7.17.12",
 		"eslint-config-globex": "6.11.0",
 		"flow-bin": "0.178.0",
 		"flow-typed": "3.7.0",
