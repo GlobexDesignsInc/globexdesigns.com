@@ -1,7 +1,7 @@
 // @flow strict
 
 import React, {type Element, Fragment} from 'react';
-import Image from 'next/image';
+import Image from 'next/future/image';
 import projectsImage from '../../public/projects.png';
 import styles from './Projects.module.css';
 import TwoPaneRow from '../TwoPaneRow';
