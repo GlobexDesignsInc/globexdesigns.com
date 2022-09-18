@@ -366,14 +366,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint-config-globex/next@npm:7.0.0-alpha.5":
-  version: 7.0.0-alpha.5
-  resolution: "@eslint-config-globex/next@npm:7.0.0-alpha.5"
+"@eslint-config-globex/next@npm:7.0.0":
+  version: 7.0.0
+  resolution: "@eslint-config-globex/next@npm:7.0.0"
   dependencies:
     "@next/eslint-plugin-next": ^12.3.0
   peerDependencies:
     next: "*"
-  checksum: 7b774a3dc4aa14e8243506f471eadf26d47eadff7c9ea08a3fa8b90808b60d3a58a464d489d3e142ba55e058ce95d06703dc68d0c80ddd0109c92634d0c5f6bb
+  checksum: 915f59c62458d34974539d8e0cdb9f44b521b6950206a6eef05226d952484cdd9aa07ac087e08b037397d62d6522994687f8691b434d66476a5a5fa579542f46
   languageName: node
   linkType: hard
 
@@ -2377,7 +2377,7 @@ __metadata:
   dependencies:
     "@babel/preset-flow": 7.18.6
     "@eslint-config-globex/flowtype": 7.0.0
-    "@eslint-config-globex/next": 7.0.0-alpha.5
+    "@eslint-config-globex/next": 7.0.0
     "@eslint-config-globex/react": 7.0.0-alpha.5
     classnames: 2.3.2
     eslint-config-globex: 7.0.0-alpha.5
