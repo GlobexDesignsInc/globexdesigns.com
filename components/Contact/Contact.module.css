@@ -11,23 +11,23 @@
 
 .h2 {
 	color: var(--WHITE);
+	font-family: var(--font-lato-lighter);
 	font-size: 30px;
-	font-weight: lighter;
 	letter-spacing: -1px;
 	margin: 24px auto;
 	text-transform: uppercase;
 }
 
 .text {
+	font-family: var(--font-lato-lighter);
 	font-size: 18px;
-	font-weight: lighter;
 	margin: 0 32px 0 0;
 }
 
 .phone {
 	color: var(--WHITE);
+	font-family: var(--font-lato-lighter);
 	font-size: 30px;
-	font-weight: lighter;
 	text-decoration: none;
 }
 
@@ -38,8 +38,8 @@
 
 .email {
 	color: var(--YELLOW);
+	font-family: var(--font-lato-lighter);
 	font-size: 18px;
-	font-weight: lighter;
 	text-decoration: none;
 }
 
@@ -50,8 +50,8 @@
 
 .address {
 	color: #827F7F;
+	font-family: var(--font-lato-lighter);
 	font-style: normal;
-	font-weight: lighter;
 	margin: 32px 0 0;
 }
 

@@ -5,8 +5,8 @@
 	color: var(--WHITE);
 	cursor: pointer;
 	display: flex;
+	font-family: var(--font-lato-lighter);
 	font-size: 22px;
-	font-weight: lighter;
 	height: 64px;
 	justify-content: center;
 	outline: none;

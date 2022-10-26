@@ -20,8 +20,8 @@
 }
 
 .text {
+	font-family: var(--font-lato-lighter);
 	font-size: 18px;
-	font-weight: lighter;
 	line-height: 220%;
 	margin: 0 auto 96px;
 	text-align: center;

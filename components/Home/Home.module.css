@@ -13,8 +13,8 @@
 .one {
 	color: var(--YELLOW);
 	display: block;
+	font-family: var(--font-lato-lighter);
 	font-size: 22px;
-	font-weight: lighter;
 	margin-bottom: 32px;
 }
 
@@ -28,8 +28,8 @@
 .three {
 	color: var(--TEXT_DEFAULT);
 	display: block;
+	font-family: var(--font-lato-lighter);
 	font-size: 30px;
-	font-weight: lighter;
 }
 
 /* Mobile */

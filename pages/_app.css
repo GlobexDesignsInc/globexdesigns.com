@@ -1,29 +1,3 @@
-/* lato-300 - latin */
-@font-face {
-	font-display: swap;
-	font-family: Lato;
-	font-style: normal;
-	font-weight: 300;
-	src:
-		local("Lato Light"),
-		local("Lato-Light"),
-		url("/fonts/lato-v16-latin-300.woff2") format("woff2"),
-		url("/fonts/lato-v16-latin-300.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* lato-regular - latin */
-@font-face {
-	font-display: swap;
-	font-family: Lato;
-	font-style: normal;
-	font-weight: 400;
-	src:
-		local("Lato Regular"),
-		local("Lato-Regular"),
-		url("/fonts/lato-v16-latin-regular.woff2") format("woff2"),
-		url("/fonts/lato-v16-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
 :root {
 	--BACKGROUND: #0C1011;
 	--BACKGROUND_DARK: #0C1011;
@@ -46,8 +20,6 @@ body {
 	-webkit-text-size-adjust: 100%;
 }
 
-/* stylelint-disable-next-line selector-max-type */
-body,
-button {
-	font-family: Lato, sans-serif;
+.fonts {
+	font-family: var(--font-lato);
 }
