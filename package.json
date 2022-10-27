@@ -23,7 +23,6 @@
 		"react-scroll": "1.8.8"
 	},
 	"devDependencies": {
-		"@babel/preset-flow": "7.18.6",
 		"@eslint-config-globex/next": "7.3.0",
 		"@eslint-config-globex/react": "7.3.0",
 		"@eslint-config-globex/typescript": "7.3.0",
