@@ -10,13 +10,11 @@ import Head from 'next/head';
 import {Lato} from '@next/font/google';
 import Router from 'next/router';
 
-
 const lato = Lato({
 	subsets: ['latin'],
 	variable: '--font-lato',
 	weight: '400',
 });
-
 
 const latoSemi = Lato({
 	subsets: ['latin'],
