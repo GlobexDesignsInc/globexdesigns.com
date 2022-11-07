@@ -22,9 +22,9 @@
 		"react-scroll": "1.8.8"
 	},
 	"devDependencies": {
-		"@eslint-config-globex/next": "7.3.0",
-		"@eslint-config-globex/react": "7.3.0",
-		"@eslint-config-globex/typescript": "7.3.0",
+		"@eslint-config-globex/next": "7.4.0",
+		"@eslint-config-globex/react": "7.4.0",
+		"@eslint-config-globex/typescript": "7.4.0",
 		"@types/node": "18.11.9",
 		"@types/react": "18.0.25",
 		"@types/react-scroll": "1.8.4",
