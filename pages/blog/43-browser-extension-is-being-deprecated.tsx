@@ -3,7 +3,12 @@
 import React from 'react';
 
 export const BlogHelp = () => (
-	<div style={{display: 'flex', flexDirection: 'column', width: 600, margin: '32px auto'}}>
+	<div style={{
+		display: 'flex',
+		flexDirection: 'column',
+		margin: '32px auto',
+		width: 600,
+	}}>
 		<h1>Sorry for the inconvenince</h1>
 		<p>If you are seeing this page everytime you launch your browser, you have a legacy &quot;Google Redesigned&quot; extension installed on your browser that should be removed.</p>
 
