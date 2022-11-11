@@ -9,7 +9,7 @@
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"start": "next start",
 		"stylelint": "stylelint-globex components/**/*.css pages/**/*.css",
-		"test": "yarn typescript && yarn eslint && yarn stylelint && yarn packagelint",
+		"test": "pnpm typescript && pnpm eslint && pnpm stylelint && pnpm packagelint",
 		"typescript": "tsc --noEmit"
 	},
 	"dependencies": {
@@ -33,6 +33,5 @@
 		"prettier-package-json": "2.7.0",
 		"stylelint-config-globex": "3.6.0",
 		"typescript": "4.8.4"
-	},
-	"packageManager": "yarn@3.2.4"
+	}
 }
