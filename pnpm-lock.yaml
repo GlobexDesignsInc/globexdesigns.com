@@ -7,7 +7,7 @@ specifiers:
   '@next/font': 13.0.3
   '@types/node': 18.11.9
   '@types/react': 18.0.25
-  '@types/react-scroll': 1.8.4
+  '@types/react-scroll': 1.8.5
   clsx: 1.2.1
   eslint-config-globex: 7.4.0
   lefthook: 1.2.0
@@ -35,7 +35,7 @@ devDependencies:
   '@eslint-config-globex/typescript': 7.4.0_typescript@4.8.4
   '@types/node': 18.11.9
   '@types/react': 18.0.25
-  '@types/react-scroll': 1.8.4
+  '@types/react-scroll': 1.8.5
   eslint-config-globex: 7.4.0
   lefthook: 1.2.0
   prettier-package-json: 2.7.0
@@ -338,8 +338,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-scroll/1.8.4:
-    resolution: {integrity: sha512-DpHA9PYw42/rBrfKbGE/kAEvHRfyDL/ACfKB/ORWUYuCLi/yGrntxSzYXmg/7TLgQsJ5ma13GCDOzFSOz+8XOA==}
+  /@types/react-scroll/1.8.5:
+    resolution: {integrity: sha512-+adEt41hQHMX4aoBOD9Y336QzQzAtlFXTrsFWToS+efgqsYXUOo0JKLeI0O5GLE50Peap6DsbUQRK6gnv8t6wQ==}
     dependencies:
       '@types/react': 18.0.25
     dev: true
