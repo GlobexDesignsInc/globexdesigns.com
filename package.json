@@ -13,9 +13,9 @@
 		"typescript": "tsc --noEmit"
 	},
 	"dependencies": {
-		"@next/font": "13.0.3",
+		"@next/font": "13.0.4",
 		"clsx": "1.2.1",
-		"next": "13.0.3",
+		"next": "13.0.4",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-ga": "3.3.1",
