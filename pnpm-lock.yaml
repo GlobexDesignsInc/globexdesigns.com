@@ -12,7 +12,7 @@ specifiers:
   eslint-config-globex: 7.5.1
   lefthook: 1.2.6
   next: 13.1.0
-  prettier-package-json: 2.7.0
+  prettier-package-json: 2.8.0
   react: 18.2.0
   react-dom: 18.2.0
   react-ga: 3.3.1
@@ -38,7 +38,7 @@ devDependencies:
   '@types/react-scroll': 1.8.5
   eslint-config-globex: 7.5.1
   lefthook: 1.2.6
-  prettier-package-json: 2.7.0
+  prettier-package-json: 2.8.0
   stylelint-config-globex: 3.7.0
   typescript: 4.9.4
 
@@ -729,23 +729,12 @@ packages:
     dev: true
 
   /concat-map/0.0.1:
-    resolution: {integrity: sha1-2Klr13/Wjfd5OnMDajug1UBdR3s=}
+    resolution: {integrity: sha512-/Srv4dswyQNBfohGpz9o6Yb3Gz3SrUDqBH5rTuhGR7ahtlbYKnVxw2bCFMRljaA7EXHaXZ8wsHdodFvbkhKmqg==}
     dev: true
 
   /core-js-pure/3.26.0:
     resolution: {integrity: sha512-LiN6fylpVBVwT8twhhluD9TzXmZQQsr2I2eIKtWNbZI1XMfBT7CV18itaN6RA7EtQd/SDdRx/wzvAShX2HvhQA==}
     requiresBuild: true
-    dev: true
-
-  /cosmiconfig/7.0.1:
-    resolution: {integrity: sha512-a1YWNUV2HwGimB7dU2s1wUMurNKjpx60HxBB6xUM8Re+2s1g1IIfJvFR0/iCF+XHdE0GMTKTuLR32UQff4TEyQ==}
-    engines: {node: '>=10'}
-    dependencies:
-      '@types/parse-json': 4.0.0
-      import-fresh: 3.3.0
-      parse-json: 5.2.0
-      path-type: 4.0.0
-      yaml: 1.10.2
     dev: true
 
   /cosmiconfig/7.1.0:
@@ -2296,13 +2285,13 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier-package-json/2.7.0:
-    resolution: {integrity: sha512-51I3/fYpBTLDXQDQK7+dfNlJzh5wdKhK8QteSZTZMppQd6aGpr1wqpwlKKZF1KdWA+91rwfpHUBrKwd2PXdXag==}
+  /prettier-package-json/2.8.0:
+    resolution: {integrity: sha512-WxtodH/wWavfw3MR7yK/GrS4pASEQ+iSTkdtSxPJWvqzG55ir5nvbLt9rw5AOiEcqqPCRM92WCtR1rk3TG3JSQ==}
     hasBin: true
     dependencies:
       '@types/parse-author': 2.0.1
       commander: 4.1.1
-      cosmiconfig: 7.0.1
+      cosmiconfig: 7.1.0
       fs-extra: 10.1.0
       glob: 7.2.3
       minimatch: 3.1.2
