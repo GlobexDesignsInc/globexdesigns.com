@@ -22,13 +22,13 @@
 		"react-scroll": "1.8.9"
 	},
 	"devDependencies": {
-		"@eslint-config-globex/next": "7.6.0",
-		"@eslint-config-globex/react": "7.6.0",
-		"@eslint-config-globex/typescript": "7.6.0",
+		"@eslint-config-globex/next": "7.6.2",
+		"@eslint-config-globex/react": "7.7.0",
+		"@eslint-config-globex/typescript": "7.6.2",
 		"@types/node": "18.11.18",
 		"@types/react": "18.0.27",
 		"@types/react-scroll": "1.8.6",
-		"eslint-config-globex": "7.6.0",
+		"eslint-config-globex": "7.7.0",
 		"lefthook": "1.2.7",
 		"prettier-package-json": "2.8.0",
 		"stylelint-config-globex": "3.7.0",
