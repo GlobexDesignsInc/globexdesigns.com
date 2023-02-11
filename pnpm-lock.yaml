@@ -6,7 +6,7 @@ specifiers:
   '@eslint-config-globex/typescript': 7.6.2
   '@next/font': 13.1.6
   '@types/node': 18.13.0
-  '@types/react': 18.0.27
+  '@types/react': 18.0.28
   '@types/react-scroll': 1.8.6
   clsx: 1.2.1
   eslint-config-globex: 7.7.0
@@ -34,7 +34,7 @@ devDependencies:
   '@eslint-config-globex/react': 7.7.0_react@18.2.0
   '@eslint-config-globex/typescript': 7.6.2_typescript@4.9.5
   '@types/node': 18.13.0
-  '@types/react': 18.0.27
+  '@types/react': 18.0.28
   '@types/react-scroll': 1.8.6
   eslint-config-globex: 7.7.0
   lefthook: 1.2.8
@@ -333,11 +333,11 @@ packages:
   /@types/react-scroll/1.8.6:
     resolution: {integrity: sha512-aMTiNgcmA7dwn1yjoHsiL78RfRnKCXzFyMbv63VrZTXloSfNePBdKtVObC3/My6irwDf0Oz0U4VjEC/vrv6/9w==}
     dependencies:
-      '@types/react': 18.0.27
+      '@types/react': 18.0.28
     dev: true
 
-  /@types/react/18.0.27:
-    resolution: {integrity: sha512-3vtRKHgVxu3Jp9t718R9BuzoD4NcQ8YJ5XRzsSKxNDiDonD2MXIT1TmSkenxuCycZJoQT5d2vE8LwWJxBC1gmA==}
+  /@types/react/18.0.28:
+    resolution: {integrity: sha512-RD0ivG1kEztNBdoAK7lekI9M+azSnitIn85h4iOiaLjaTrMjzslhaqCGaI4IyCJ1RljWiLCEu4jyrLLgqxBTew==}
     dependencies:
       '@types/prop-types': 15.7.5
       '@types/scheduler': 0.16.2
