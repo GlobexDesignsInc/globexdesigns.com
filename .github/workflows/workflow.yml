@@ -1,4 +1,4 @@
-name: Test
+name: Test & Deploy
 
 on: push
 
@@ -23,3 +23,22 @@ jobs:
     
     - name: Test
       run: pnpm test
+
+    - name: Deploy
+      if: github.event_name == 'push' && github.ref == 'refs/heads/master'
+      env:
+        BUILD_ID: ${{ github.sha }}
+        ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
+      run: >
+        now
+        --prod
+        --build-env BUILD_ID=${BUILD_ID}
+        --yes
+        --env NODE_ENV=production
+        --public
+        --token=${ZEIT_TOKEN}
+
+    - name: Verify
+      uses: wei/curl@master
+      with:
+        args: https://www.globexdesigns.com
