@@ -8,7 +8,7 @@
 		"eslint": "eslint-globex .",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"start": "next start",
-		"stylelint": "stylelint-globex components/**/*.css pages/**/*.css",
+		"stylelint": "stylelint-globex app/**/*.css components/**/*.css",
 		"test": "pnpm typescript && pnpm eslint && pnpm stylelint && pnpm packagelint",
 		"typescript": "tsc --noEmit"
 	},
