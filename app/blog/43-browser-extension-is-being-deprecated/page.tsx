@@ -1,6 +1,6 @@
 import React from 'react';
 
-export const BlogHelp = () => (
+const BlogHelp = () => (
 	<div style={{
 		display: 'flex',
 		flexDirection: 'column',
