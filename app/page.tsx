@@ -11,7 +11,7 @@ import React from 'react';
 import {Element as ScrollElement} from 'react-scroll';
 import Services from '../components/Services';
 
-export const Index = () => (
+const Index = () => (
 	<>
 		<Header />
 		<ScrollElement name='home'>

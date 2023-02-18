@@ -30,7 +30,7 @@ jobs:
         BUILD_ID: ${{ github.sha }}
         ZEIT_TOKEN: ${{ secrets.ZEIT_TOKEN }}
       run: >
-        now
+        vercel
         --prod
         --build-env BUILD_ID=${BUILD_ID}
         --yes
