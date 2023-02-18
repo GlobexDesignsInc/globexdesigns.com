@@ -1,5 +1,3 @@
-/* eslint-disable filenames/match-exported */
-
 import React from 'react';
 
 export const BlogHelp = () => (

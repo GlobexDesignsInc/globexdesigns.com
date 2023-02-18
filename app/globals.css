@@ -1,0 +1,10 @@
+:root {
+	--BACKGROUND: #0C1011;
+	--BACKGROUND_DARK: #0C1011;
+	--BORDER: #2B3838;
+	--TEXT_DEFAULT: #C9C8C7;
+	--WHITE: #FFF;
+	--YELLOW: #FFCD35;
+}
+
+* { box-sizing: border-box }

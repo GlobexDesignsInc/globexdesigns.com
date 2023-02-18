@@ -1,0 +1,11 @@
+.main {
+	background: var(--BACKGROUND);
+	color: var(--TEXT_DEFAULT);
+	font-family: var(--font-lato-lighter);
+	letter-spacing: 0.5px;
+	line-height: 180%;
+	margin: 0;
+	padding: 0;
+}
+
+.body { margin: 0 }

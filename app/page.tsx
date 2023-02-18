@@ -1,3 +1,5 @@
+'use client';
+
 import About from '../components/About';
 import Contact from '../components/Contact';
 import Header from '../components/Header';
@@ -9,7 +11,7 @@ import React from 'react';
 import {Element as ScrollElement} from 'react-scroll';
 import Services from '../components/Services';
 
-export const index = () => (
+export const Index = () => (
 	<>
 		<Header />
 		<ScrollElement name='home'>
@@ -30,4 +32,4 @@ export const index = () => (
 	</>
 );
 
-export default index;
+export default Index;

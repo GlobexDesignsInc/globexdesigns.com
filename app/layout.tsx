@@ -1,13 +1,14 @@
-/* eslint-disable react/jsx-props-no-spreading */
-
-import './_app.css';
+import './globals.css';
 import {SITE_AUTHOR, SITE_DESC, SITE_NAME, TWITTER_USER} from '../constants/seo';
 import Analytics from '../components/Analytics';
-import type {AppProps} from 'next/app';
-import clsx from 'clsx';
-import Head from 'next/head';
+import {clsx} from 'clsx';
 import {Lato} from '@next/font/google';
 import React from 'react';
+import styles from './layout.module.css';
+
+type PropsType = {
+	children?: React.ReactNode,
+};
 
 const lato = Lato({
 	subsets: ['latin'],
@@ -21,9 +22,9 @@ const latoSemi = Lato({
 	weight: '300',
 });
 
-const _app = ({Component, pageProps}: AppProps) => (
-	<>
-		<Head>
+const Layout = ({ children }: PropsType) => (
+	<html className={clsx(styles.main, lato.variable, latoSemi.variable)} lang='en'>
+		<head>
 			<title>{SITE_NAME}</title>
 			<meta charSet='utf-8' />
 			<meta content='width=device-width,initial-scale=1,shrink-to-fit=no' name='viewport' />
@@ -42,14 +43,13 @@ const _app = ({Component, pageProps}: AppProps) => (
 			<meta content={TWITTER_USER} property='twitter:creator' />
 			<meta content={SITE_DESC} property='twitter:description' />
 			<meta content={SITE_NAME} property='twitter:title' />
-			<link href='/favicon.ico' rel='icon' type='image/x-icon' />
 			<link href='https://www.google-analytics.com' rel='preconnect' />
-		</Head>
-		<div className={clsx(lato.variable, latoSemi.variable, 'fonts')}>
-			<Component {...pageProps} />
+		</head>
+		<body className={styles.body}>
+			{children}
 			<Analytics />
-		</div>
-	</>
+		</body>
+	</html>
 );
 
-export default _app;
+export default Layout;

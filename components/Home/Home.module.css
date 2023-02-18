@@ -13,7 +13,6 @@
 .one {
 	color: var(--YELLOW);
 	display: block;
-	font-family: var(--font-lato-lighter);
 	font-size: 22px;
 	margin-bottom: 32px;
 }
@@ -28,7 +27,6 @@
 .three {
 	color: var(--TEXT_DEFAULT);
 	display: block;
-	font-family: var(--font-lato-lighter);
 	font-size: 30px;
 }
 
