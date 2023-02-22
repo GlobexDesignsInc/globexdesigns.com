@@ -12,7 +12,7 @@ specifiers:
   eslint-config-globex: 7.7.0
   lefthook: 1.2.9
   next: 13.1.6
-  nextjs-google-analytics: 2.3.0
+  nextjs-google-analytics: 2.3.2
   prettier-package-json: 2.8.0
   react: 18.2.0
   react-dom: 18.2.0
@@ -24,7 +24,7 @@ dependencies:
   '@next/font': 13.1.6
   clsx: 1.2.1
   next: 13.1.6_biqbaboplfbrettd7655fr4n2y
-  nextjs-google-analytics: 2.3.0_next@13.1.6+react@18.2.0
+  nextjs-google-analytics: 2.3.2_next@13.1.6+react@18.2.0
   react: 18.2.0
   react-dom: 18.2.0_react@18.2.0
   react-scroll: 1.8.9_biqbaboplfbrettd7655fr4n2y
@@ -2153,8 +2153,8 @@ packages:
       - '@babel/core'
       - babel-plugin-macros
 
-  /nextjs-google-analytics/2.3.0_next@13.1.6+react@18.2.0:
-    resolution: {integrity: sha512-MRL2/M01qxZtq+6m+J3ZBjNIQWGQnudsrH6VberIzPftrLR0jqV4Abvhr50v9xAVhloIdZpYxZbFYO3VXH1FMg==}
+  /nextjs-google-analytics/2.3.2_next@13.1.6+react@18.2.0:
+    resolution: {integrity: sha512-wa2w4RkU8lwDsjUkh+KmdJPisJ9Dp7Pn0qEnhpLo8cP7/HFY9XSBCympiAhW6PPJu7/1bW2GuAhrY5tLABX6hg==}
     peerDependencies:
       next: '>=11.0.0'
       react: '>=17.0.0'
