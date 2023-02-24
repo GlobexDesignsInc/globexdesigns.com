@@ -1,8 +1,8 @@
 import './globals.css';
-import {SITE_AUTHOR, SITE_DESC, SITE_NAME, TWITTER_USER} from '../constants/seo';
 import Analytics from '../components/Analytics';
 import {clsx} from 'clsx';
-import {Lato} from '@next/font/google';
+import {Lato} from 'next/font/google';
+import type { Metadata } from 'next';
 import React from 'react';
 import styles from './layout.module.css';
 
@@ -24,32 +24,40 @@ const latoSemi = Lato({
 
 const Layout = ({ children }: PropsType) => (
 	<html className={clsx(styles.main, lato.variable, latoSemi.variable)} lang='en'>
-		<head>
-			<title>{SITE_NAME}</title>
-			<meta charSet='utf-8' />
-			<meta content='width=device-width,initial-scale=1,shrink-to-fit=no' name='viewport' />
-			<meta content={SITE_NAME} name='application-name' />
-			<meta content={SITE_DESC} name='description' />
-			<meta content='next.js' name='generator' />
-			<meta content='General' name='rating' />
-			<meta content='#222' name='theme-color' />
-			<meta content={SITE_AUTHOR} property='article:author' />
-			<meta content={SITE_DESC} property='og:description' />
-			<meta content='en_US' property='og:locale' />
-			<meta content={SITE_NAME} property='og:site_name' />
-			<meta content={SITE_NAME} property='og:title' />
-			<meta content='website' property='og:type' />
-			<meta content='summary' property='twitter:card' />
-			<meta content={TWITTER_USER} property='twitter:creator' />
-			<meta content={SITE_DESC} property='twitter:description' />
-			<meta content={SITE_NAME} property='twitter:title' />
-			<link href='https://www.google-analytics.com' rel='preconnect' />
-		</head>
 		<body className={styles.body}>
 			{children}
 			<Analytics />
 		</body>
 	</html>
 );
+
+const SITE_AUTHOR = 'Globex Designs, Inc.';
+const SITE_NAME = 'Globex Designs, Inc. - Vancouver Web Design & Software Development';
+const SITE_DESC = 'Globex Designs provides web design, software development and media production from Vancouver, Canada.';
+
+export const metadata: Metadata = {
+	applicationName: SITE_NAME,
+	authors: [{name: SITE_AUTHOR}],
+	creator: SITE_AUTHOR,
+	description: SITE_DESC,
+	generator: 'Next.js',
+	keywords: ['globex', 'designs', 'vancouver', 'web', 'design', 'software', 'development', 'media', 'production', 'agency', 'company'],
+	openGraph: {
+		description: SITE_DESC,
+		locale: 'en-US',
+		siteName: SITE_NAME,
+		title: SITE_NAME,
+		type: 'website',
+	},
+	publisher: SITE_AUTHOR,
+	themeColor: '#222',
+	title: SITE_NAME,
+	twitter: {
+		card: 'summary',
+		creator: '@globex',
+		description: SITE_DESC,
+		title: SITE_NAME,
+	},
+};
 
 export default Layout;
