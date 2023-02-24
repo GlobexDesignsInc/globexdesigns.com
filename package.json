@@ -15,7 +15,7 @@
 	"dependencies": {
 		"clsx": "1.2.1",
 		"next": "13.2.1",
-		"nextjs-google-analytics": "2.3.2",
+		"nextjs-google-analytics": "2.3.3",
 		"react": "18.2.0",
 		"react-dom": "18.2.0",
 		"react-scroll": "1.8.9"
