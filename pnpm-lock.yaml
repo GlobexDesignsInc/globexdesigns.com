@@ -4,7 +4,7 @@ specifiers:
   '@eslint-config-globex/next': 7.6.3
   '@eslint-config-globex/react': 7.7.1
   '@eslint-config-globex/typescript': 7.7.0
-  '@types/node': 18.15.0
+  '@types/node': 18.15.1
   '@types/react': 18.0.28
   '@types/react-scroll': 1.8.6
   clsx: 1.2.1
@@ -31,7 +31,7 @@ devDependencies:
   '@eslint-config-globex/next': 7.6.3_next@13.2.4
   '@eslint-config-globex/react': 7.7.1_react@18.2.0
   '@eslint-config-globex/typescript': 7.7.0_typescript@4.9.5
-  '@types/node': 18.15.0
+  '@types/node': 18.15.1
   '@types/react': 18.0.28
   '@types/react-scroll': 1.8.6
   eslint-config-globex: 7.7.1
@@ -304,8 +304,8 @@ packages:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: true
 
-  /@types/node/18.15.0:
-    resolution: {integrity: sha512-z6nr0TTEOBGkzLGmbypWOGnpSpSIBorEhC4L+4HeQ2iezKCi4f77kyslRwvHeNitymGQ+oFyIWGP96l/DPSV9w==}
+  /@types/node/18.15.1:
+    resolution: {integrity: sha512-U2TWca8AeHSmbpi314QBESRk7oPjSZjDsR+c+H4ECC1l+kFgpZf8Ydhv3SJpPy51VyZHHqxlb6mTTqYNNRVAIw==}
     dev: true
 
   /@types/normalize-package-data/2.4.1:
