@@ -42,6 +42,7 @@ export const metadata: Metadata = {
 	description: SITE_DESC,
 	generator: 'Next.js',
 	keywords: ['globex', 'designs', 'vancouver', 'web', 'design', 'software', 'development', 'media', 'production', 'agency', 'company'],
+	metadataBase: new URL('https://globexdesigns.com'),
 	openGraph: {
 		description: SITE_DESC,
 		locale: 'en-US',
