@@ -53,8 +53,8 @@ devDependencies:
     specifier: 2.8.0
     version: 2.8.0
   stylelint-config-globex:
-    specifier: 3.11.2
-    version: 3.11.2
+    specifier: 3.12.0
+    version: 3.12.0
   typescript:
     specifier: 5.1.6
     version: 5.1.6
@@ -2786,8 +2786,8 @@ packages:
       client-only: 0.0.1
       react: 18.2.0
 
-  /stylelint-config-globex@3.11.2:
-    resolution: {integrity: sha512-slNpb44TuEjnPLHdbM+YvjXuEcUfuR9vSCn5o0PGFAYXMgxm+e8uj76XM3kajuEz1qTSq9Xqyt+JTiY94+l1pg==}
+  /stylelint-config-globex@3.12.0:
+    resolution: {integrity: sha512-6uWBny5lsSiZBT4PVTHZQ7/jTQzRCW2QyZdRODbxkHr/tarqoSJVB95XkFAXcHRiQaAzLKYkbbeN0wGAURBUPg==}
     hasBin: true
     dependencies:
       stylelint: 15.10.1
