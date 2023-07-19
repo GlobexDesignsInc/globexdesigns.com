@@ -2,7 +2,7 @@ import './globals.css';
 import Analytics from '../components/Analytics';
 import {clsx} from 'clsx';
 import {Lato} from 'next/font/google';
-import type { Metadata } from 'next';
+import {type Metadata} from 'next';
 import React from 'react';
 import styles from './layout.module.css';
 
