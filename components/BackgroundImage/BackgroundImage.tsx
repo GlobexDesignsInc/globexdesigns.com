@@ -1,6 +1,5 @@
-import Image from 'next/image';
+import Image, { type StaticImageData } from 'next/image';
 import React from 'react';
-import type {StaticImageData} from 'next/image';
 import styles from './BackgroundImage.module.css';
 
 type PropsType = {
