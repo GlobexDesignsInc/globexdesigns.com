@@ -9,6 +9,7 @@ type PropsType = {
 	children?: React.ReactNode,
 	className?: string | null,
 	offset?: number,
+	// eslint-disable-next-line react/boolean-prop-naming
 	smooth?: boolean,
 	to: string,
 };

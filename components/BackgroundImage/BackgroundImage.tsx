@@ -6,21 +6,21 @@ type PropsType = {
 	alt: string,
 	children?: React.ReactNode,
 	image: StaticImageData,
-	priority?: boolean,
+	isPriority?: boolean,
 };
 
 export const BackgroundImage = ({
 	alt,
 	children,
 	image,
-	priority = false,
+	isPriority = false,
 }: PropsType) => (
 	<div className={styles.main}>
 		<Image
 			alt={alt}
 			className={styles.img}
 			fill={true}
-			priority={priority}
+			priority={isPriority}
 			src={image} />
 		<div className={styles.children}>
 			{children}

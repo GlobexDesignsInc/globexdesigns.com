@@ -10,6 +10,9 @@
     },
     "rules": {
       "import/consistent-type-specifier-style": ["error", "prefer-inline"],
-      "max-len": "off"
+      "max-len": "off",
+      "react/boolean-prop-naming": ["error", {
+        "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+"
+      }]
     }
 }

@@ -6,7 +6,7 @@ import React from 'react';
 import styles from './Home.module.css';
 
 export const Home = () => (
-	<BackgroundImage alt='Home' image={image} priority={true}>
+	<BackgroundImage alt='Home' image={image} isPriority={true}>
 		<CenteredContent className={styles.main}>
 			<h1 className={styles.h1}>
 				<span className={styles.one}>We are a</span>
