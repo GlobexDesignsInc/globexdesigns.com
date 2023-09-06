@@ -13,6 +13,7 @@
       "max-len": "off",
       "react/boolean-prop-naming": ["error", {
         "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+"
-      }]
+      }],
+      "react/prefer-read-only-props": "off"
     }
 }
