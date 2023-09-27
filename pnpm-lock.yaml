@@ -41,8 +41,8 @@ devDependencies:
     specifier: 18.2.23
     version: 18.2.23
   '@types/react-scroll':
-    specifier: 1.8.7
-    version: 1.8.7
+    specifier: 1.8.8
+    version: 1.8.8
   eslint-config-globex:
     specifier: 7.7.2
     version: 7.7.2(@typescript-eslint/parser@5.62.0)
@@ -360,8 +360,8 @@ packages:
     resolution: {integrity: sha512-JCB8C6SnDoQf0cNycqd/35A7MjcnK+ZTqE7judS6o7utxUCg6imJg3QK2qzHKszlTjcj2cn+NwMB2i96ubpj7w==}
     dev: true
 
-  /@types/react-scroll@1.8.7:
-    resolution: {integrity: sha512-BB8g+hQL7OtBPWg/NcES6p5u6vduZonGl1BxrsGUwcefE53pfI0pFDd1lRFndgEUE6whYdFfhD+j0sZZT/6brQ==}
+  /@types/react-scroll@1.8.8:
+    resolution: {integrity: sha512-KJRwopG2kgJVzhDGRXhkhbNXCzPFtxNVJrx99czqW7LK8JXU8ufG5POo864cA9vFDEr4vSR+NOlK0NCHbbnjkw==}
     dependencies:
       '@types/react': 18.2.23
     dev: true
