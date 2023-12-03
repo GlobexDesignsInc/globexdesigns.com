@@ -35,8 +35,8 @@ devDependencies:
     specifier: 7.8.0
     version: 7.8.0(eslint@8.54.0)(typescript@5.3.2)
   '@types/node':
-    specifier: 20.10.2
-    version: 20.10.2
+    specifier: 20.10.3
+    version: 20.10.3
   '@types/react':
     specifier: 18.2.41
     version: 18.2.41
@@ -340,8 +340,8 @@ packages:
     resolution: {integrity: sha512-hov8bUuiLiyFPGyFPE1lwWhmzYbirOXQNNo40+y3zow8aFVTeyn3VWL0VFFfdNddA8S4Vf0Tc062rzyNr7Paag==}
     dev: true
 
-  /@types/node@20.10.2:
-    resolution: {integrity: sha512-37MXfxkb0vuIlRKHNxwCkb60PNBpR94u4efQuN4JgIAm66zfCDXGSAFCef9XUWFovX2R1ok6Z7MHhtdVXXkkIw==}
+  /@types/node@20.10.3:
+    resolution: {integrity: sha512-XJavIpZqiXID5Yxnxv3RUDKTN5b81ddNC3ecsA0SoFXz/QU8OGBwZGMomiq0zw+uuqbL/krztv/DINAQ/EV4gg==}
     dependencies:
       undici-types: 5.26.5
     dev: true
