@@ -38,8 +38,8 @@ devDependencies:
     specifier: 20.10.3
     version: 20.10.3
   '@types/react':
-    specifier: 18.2.41
-    version: 18.2.41
+    specifier: 18.2.42
+    version: 18.2.42
   '@types/react-scroll':
     specifier: 1.8.10
     version: 1.8.10
@@ -365,11 +365,11 @@ packages:
   /@types/react-scroll@1.8.10:
     resolution: {integrity: sha512-RD4Z7grbdNGOKwKnUBKar6zNxqaW3n8m9QSrfvljW+gmkj1GArb8AFBomVr6xMOgHPD3v1uV3BrIf01py57daQ==}
     dependencies:
-      '@types/react': 18.2.41
+      '@types/react': 18.2.42
     dev: true
 
-  /@types/react@18.2.41:
-    resolution: {integrity: sha512-CwOGr/PiLiNBxEBqpJ7fO3kocP/2SSuC9fpH5K7tusrg4xPSRT/193rzolYwQnTN02We/ATXKnb6GqA5w4fRxw==}
+  /@types/react@18.2.42:
+    resolution: {integrity: sha512-c1zEr96MjakLYus/wPnuWDo1/zErfdU9rNsIGmE+NV71nx88FG9Ttgo5dqorXTu/LImX2f63WBP986gJkMPNbA==}
     dependencies:
       '@types/prop-types': 15.7.11
       '@types/scheduler': 0.16.8
