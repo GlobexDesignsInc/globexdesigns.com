@@ -25,7 +25,7 @@
 		"@eslint-config-globex/react": "7.7.1",
 		"@eslint-config-globex/typescript": "7.8.0",
 		"@types/node": "20.10.6",
-		"@types/react": "18.2.46",
+		"@types/react": "18.2.47",
 		"@types/react-scroll": "1.8.10",
 		"eslint-config-globex": "7.7.2",
 		"lefthook": "1.5.5",
