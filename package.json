@@ -24,7 +24,7 @@
 		"@eslint-config-globex/next": "7.6.4",
 		"@eslint-config-globex/react": "7.7.1",
 		"@eslint-config-globex/typescript": "7.8.0",
-		"@types/node": "20.11.3",
+		"@types/node": "20.11.4",
 		"@types/react": "18.2.48",
 		"@types/react-scroll": "1.8.10",
 		"eslint-config-globex": "7.7.2",
