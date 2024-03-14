@@ -28,7 +28,7 @@
 		"@types/react": "18.2.65",
 		"@types/react-scroll": "1.8.10",
 		"eslint-config-globex": "7.7.2",
-		"lefthook": "1.6.5",
+		"lefthook": "1.6.6",
 		"prettier-package-json": "2.8.0",
 		"stylelint-config-globex": "3.12.1",
 		"typescript": "5.4.2"
