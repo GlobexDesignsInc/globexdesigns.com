@@ -15,8 +15,8 @@ importers:
         specifier: 14.2.5
         version: 14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       nextjs-google-analytics:
-        specifier: 2.3.3
-        version: 2.3.3(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
+        specifier: 2.3.7
+        version: 2.3.7(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)
       react:
         specifier: 18.3.1
         version: 18.3.1
@@ -1264,8 +1264,8 @@ packages:
       sass:
         optional: true
 
-  nextjs-google-analytics@2.3.3:
-    resolution: {integrity: sha512-Y6sI6A7wt5dji8hYBnVkOh9LTyImSLFZXx3FpyQgVW7W4b4qEFHjH2u3fhDJsrRZeLlUGM8/RuHD/mhHc2Axfg==}
+  nextjs-google-analytics@2.3.7:
+    resolution: {integrity: sha512-kuE5OcqmAg1qh9J6LskoDLybj8WmLyfxD+KsVGGvRe5zZg6bGQ/QM/1/7TdJq/u7hIeVqFqcloadD0pcosRXUw==}
     peerDependencies:
       next: '>=11.0.0'
       react: '>=17.0.0'
@@ -3094,7 +3094,7 @@ snapshots:
       - '@babel/core'
       - babel-plugin-macros
 
-  nextjs-google-analytics@2.3.3(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
+  nextjs-google-analytics@2.3.7(next@14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1):
     dependencies:
       next: 14.2.5(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       react: 18.3.1
