@@ -40,8 +40,8 @@ importers:
         specifier: 22.10.1
         version: 22.10.1
       '@types/react':
-        specifier: 19.0.0
-        version: 19.0.0
+        specifier: 19.0.1
+        version: 19.0.1
       '@types/react-scroll':
         specifier: 1.8.10
         version: 1.8.10
@@ -362,8 +362,8 @@ packages:
   '@types/react-scroll@1.8.10':
     resolution: {integrity: sha512-RD4Z7grbdNGOKwKnUBKar6zNxqaW3n8m9QSrfvljW+gmkj1GArb8AFBomVr6xMOgHPD3v1uV3BrIf01py57daQ==}
 
-  '@types/react@19.0.0':
-    resolution: {integrity: sha512-MY3oPudxvMYyesqs/kW1Bh8y9VqSmf+tzqw3ae8a9DZW68pUe3zAdHeI1jc6iAysuRdACnVknHP8AhwD4/dxtg==}
+  '@types/react@19.0.1':
+    resolution: {integrity: sha512-YW6614BDhqbpR5KtUYzTA+zlA7nayzJRA9ljz9CQoxthR0sDisYZLuvSMsil36t4EH/uAt8T52Xb4sVw17G+SQ==}
 
   '@types/semver@7.5.8':
     resolution: {integrity: sha512-I8EUhyrgfLrcTkzV3TSsGyl1tSuPrEDzr0yd5m90UgNxQkyDXULk3b6MlQqTCpZpNtWe1K0hzclnZkTcLBe2UQ==}
@@ -2146,9 +2146,9 @@ snapshots:
 
   '@types/react-scroll@1.8.10':
     dependencies:
-      '@types/react': 19.0.0
+      '@types/react': 19.0.1
 
-  '@types/react@19.0.0':
+  '@types/react@19.0.1':
     dependencies:
       csstype: 3.1.3
 
