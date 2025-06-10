@@ -37,8 +37,8 @@ importers:
         specifier: 7.8.0
         version: 7.8.0(eslint@8.57.0)(typescript@5.8.3)
       '@types/node':
-        specifier: 22.15.30
-        version: 22.15.30
+        specifier: 22.15.31
+        version: 22.15.31
       '@types/react':
         specifier: 19.1.7
         version: 19.1.7
@@ -355,8 +355,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@22.15.30':
-    resolution: {integrity: sha512-6Q7lr06bEHdlfplU6YRbgG1SFBdlsfNC4/lX+SkhiTs0cpJkOElmWls8PxDFv4yY/xKb8Y6SO0OmSX4wgqTZbA==}
+  '@types/node@22.15.31':
+    resolution: {integrity: sha512-jnVe5ULKl6tijxUhvQeNbQG/84fHfg+yMak02cT8QVhBx/F05rAVxCGBYYTh2EKz22D6JF5ktXuNwdx7b9iEGw==}
 
   '@types/parse-author@2.0.3':
     resolution: {integrity: sha512-pgRW2K/GVQoogylrGJXDl7PBLW9A6T4OOc9Hy9MLT5f7vgufK2GQ8FcfAbjFHR5HjcN9ByzuCczAORk49REqoA==}
@@ -2145,7 +2145,7 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@22.15.30':
+  '@types/node@22.15.31':
     dependencies:
       undici-types: 6.21.0
 
