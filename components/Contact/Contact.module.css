@@ -4,32 +4,32 @@
 }
 
 .left {
-	text-align: left;
 	width: 100%;
+	text-align: left;
 }
 
 .right {
+	width: 100%;
 	text-align: right;
 	text-transform: uppercase;
-	width: 100%;
 }
 
 .h2 {
-	color: var(--WHITE);
-	font-size: 30px;
-	letter-spacing: -1px;
 	margin: 24px auto;
+	font-size: 30px;
+	color: var(--WHITE);
 	text-transform: uppercase;
+	letter-spacing: -1px;
 }
 
 .text {
-	font-size: 18px;
 	margin: 0 32px 0 0;
+	font-size: 18px;
 }
 
 .phone {
-	color: var(--WHITE);
 	font-size: 30px;
+	color: var(--WHITE);
 	text-decoration: none;
 }
 
@@ -39,8 +39,8 @@
 }
 
 .email {
-	color: var(--YELLOW);
 	font-size: 18px;
+	color: var(--YELLOW);
 	text-decoration: none;
 }
 
@@ -50,9 +50,9 @@
 }
 
 .address {
-	color: #827F7F;
-	font-style: normal;
 	margin: 32px 0 0;
+	font-style: normal;
+	color: #827f7f;
 }
 
 .mailing {
@@ -67,12 +67,12 @@
 	}
 
 	.h2 {
-		font-size: 18px;
 		margin: 16px auto;
+		font-size: 18px;
 	}
 
 	.text {
-		font-size: 12px;
 		margin: 0 32px;
+		font-size: 12px;
 	}
 }

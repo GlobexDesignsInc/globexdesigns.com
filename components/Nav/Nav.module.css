@@ -1,22 +1,23 @@
 .main {
-	font-family: var(--font-lato);
 	margin-top: 0;
+	font-family: var(--font-lato);
 }
 
 .link {
-	color: var(--TEXT_DEFAULT);
-	cursor: pointer;
+	z-index: 100;
 	font-size: 18px;
+	color: var(--TEXT_DEFAULT);
+	text-transform: uppercase;
 	letter-spacing: 0;
 	text-decoration: none;
 	text-shadow: 0 0 1px rgba(12, 16, 17, 0.75);
-	text-transform: uppercase;
+	cursor: pointer;
 	transition: color 250ms ease-in-out;
-	z-index: 100;
 }
 
-/* stylelint-disable-next-line selector-max-combinators */
-.link + .link { margin-left: 48px }
+.link + .link {
+	margin-left: 48px;
+}
 
 .link:focus,
 .link:hover {
@@ -39,8 +40,7 @@
 		font-size: 14px;
 	}
 
-	/* stylelint-disable-next-line selector-max-combinators */
 	.link + .link {
-		margin-left: 32px
+		margin-left: 32px;
 	}
 }

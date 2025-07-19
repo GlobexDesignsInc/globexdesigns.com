@@ -1,8 +1,7 @@
-import BackgroundImage from '../BackgroundImage';
-import Button from '../Button';
-import CenteredContent from '../CenteredContent';
 import image from '../../public/home.jpg';
-import React from 'react';
+import BackgroundImage from '../BackgroundImage/BackgroundImage';
+import Button from '../Button/Button';
+import CenteredContent from '../CenteredContent/CenteredContent';
 import styles from './Home.module.css';
 
 export const Home = () => (

@@ -1,18 +1,31 @@
 .main {
-	height: 64px;
 	width: 64px;
+	height: 64px;
 }
 
-/* stylelint-disable-next-line selector-max-combinators, selector-max-type */
 .main path {
 	fill: currentColor;
 }
 
-.yellow { color: #FCE449; }
-.orange { color: #FF973B; }
-.red { color: #FD4136; }
-.blue { color: #268AD5; }
-.green { color: #58D761; }
+.yellow {
+	color: #fce449;
+}
+
+.orange {
+	color: #ff973b;
+}
+
+.red {
+	color: #fd4136;
+}
+
+.blue {
+	color: #268ad5;
+}
+
+.green {
+	color: #58d761;
+}
 
 /* Mobile */
 @media (max-width: 1000px) {

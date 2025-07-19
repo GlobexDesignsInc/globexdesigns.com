@@ -4,30 +4,30 @@
 }
 
 .h1 {
-	font-weight: normal;
 	margin: 0 0 56px;
+	font-weight: normal;
 	text-align: center;
 	text-transform: uppercase;
 }
 
 .one {
-	color: var(--YELLOW);
 	display: block;
-	font-size: 22px;
 	margin-bottom: 32px;
+	font-size: 22px;
+	color: var(--YELLOW);
 }
 
 .two {
-	color: var(--WHITE);
 	display: block;
-	font-size: 46px;
 	margin-bottom: 32px;
+	font-size: 46px;
+	color: var(--WHITE);
 }
 
 .three {
-	color: var(--TEXT_DEFAULT);
 	display: block;
 	font-size: 30px;
+	color: var(--TEXT_DEFAULT);
 }
 
 /* Mobile */
@@ -37,7 +37,7 @@
 	}
 
 	.one {
-		font-size: 14px
+		font-size: 14px;
 	}
 
 	.two {

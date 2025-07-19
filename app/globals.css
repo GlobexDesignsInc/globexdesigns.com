@@ -1,12 +1,12 @@
-/* stylelint-disable selector-max-universal */
-
 :root {
-	--BACKGROUND: #0C1011;
-	--BACKGROUND_DARK: #0C1011;
-	--BORDER: #2B3838;
-	--TEXT_DEFAULT: #C9C8C7;
-	--WHITE: #FFF;
-	--YELLOW: #FFCD35;
+	--BACKGROUND: #0c1011;
+	--BACKGROUND_DARK: #0c1011;
+	--BORDER: #2b3838;
+	--TEXT_DEFAULT: #c9c8c7;
+	--WHITE: #fff;
+	--YELLOW: #ffcd35;
 }
 
-* { box-sizing: border-box }
+* {
+	box-sizing: border-box;
+}

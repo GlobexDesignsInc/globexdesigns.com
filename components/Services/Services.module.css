@@ -3,28 +3,28 @@
 }
 
 .h2 {
-	color: var(--WHITE);
+	margin: 0 auto 32px;
 	font-size: 46px;
 	font-weight: normal;
-	margin: 0 auto 32px;
+	color: var(--WHITE);
 	text-align: center;
 	text-transform: uppercase;
 }
 
 .icons {
-	align-items: center;
 	display: flex;
+	align-items: center;
 	justify-content: space-between;
-	margin: 64px auto;
 	width: 90%;
+	margin: 64px auto;
 }
 
 .text {
+	width: 90%;
+	margin: 0 auto 96px;
 	font-size: 18px;
 	line-height: 220%;
-	margin: 0 auto 96px;
 	text-align: center;
-	width: 90%;
 }
 
 /* Mobile */

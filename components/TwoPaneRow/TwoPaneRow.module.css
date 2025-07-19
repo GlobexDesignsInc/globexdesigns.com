@@ -1,6 +1,6 @@
 .main {
-	background: var(--BACKGROUND_DARK);
 	height: 322px;
+	background: var(--BACKGROUND_DARK);
 }
 
 .center {
@@ -9,13 +9,13 @@
 
 .left,
 .right {
-	align-items: center;
 	display: flex;
 	flex-direction: column;
-	height: 274px;
+	align-items: center;
 	justify-content: center;
-	text-align: center;
 	width: 50%;
+	height: 274px;
+	text-align: center;
 }
 
 .left {
@@ -34,13 +34,13 @@
 
 	.left,
 	.right {
+		width: 100%;
 		height: auto;
 		padding: 32px 0;
-		width: 100%;
 	}
 
 	.left {
-		border-bottom: 1px solid var(--BORDER);
 		border-right: none;
+		border-bottom: 1px solid var(--BORDER);
 	}
 }

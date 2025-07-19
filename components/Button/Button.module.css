@@ -1,23 +1,25 @@
 .main {
-	align-items: center;
-	background: none;
-	border: 2px solid var(--WHITE);
-	color: var(--WHITE);
-	cursor: pointer;
 	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 300px;
+	height: 64px;
 	font-family: var(--font-lato-lighter);
 	font-size: 22px;
-	height: 64px;
-	justify-content: center;
-	outline: none;
+	color: var(--WHITE);
 	text-align: center;
 	text-transform: uppercase;
-	transition: border-color 250ms ease, color 250ms ease;
-	width: 300px;
+	cursor: pointer;
+	outline: none;
+	background: none;
+	border: 2px solid var(--WHITE);
+	transition:
+		border-color 250ms ease,
+		color 250ms ease;
 }
 
 .main:focus,
 .main:hover {
-	border-color: var(--YELLOW);
 	color: var(--YELLOW);
+	border-color: var(--YELLOW);
 }

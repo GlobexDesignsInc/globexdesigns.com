@@ -1,15 +1,14 @@
 'use client';
 
-import About from '../components/About';
-import Contact from '../components/Contact';
-import Header from '../components/Header';
-import Home from '../components/Home';
-import Map from '../components/Map';
-import Passions from '../components/Passions';
-import Projects from '../components/Projects';
-import React from 'react';
-import {Element as ScrollElement} from 'react-scroll';
-import Services from '../components/Services';
+import { Element as ScrollElement } from 'react-scroll';
+import About from '../components/About/About';
+import CompanyMap from '../components/CompanyMap/CompanyMap';
+import Contact from '../components/Contact/Contact';
+import Header from '../components/Header/Header';
+import Home from '../components/Home/Home';
+import Passions from '../components/Passions/Passions';
+import Projects from '../components/Projects/Projects';
+import Services from '../components/Services/Services';
 
 const Index = () => (
 	<>
@@ -28,7 +27,7 @@ const Index = () => (
 		<ScrollElement name='contact'>
 			<Contact />
 		</ScrollElement>
-		<Map />
+		<CompanyMap />
 	</>
 );
 

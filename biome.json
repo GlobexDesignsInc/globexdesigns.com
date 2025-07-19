@@ -1,0 +1,138 @@
+{
+	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"assist": {
+		"actions": {
+			"source": {
+				"organizeImports": "on",
+				"useSortedAttributes": "on",
+				"useSortedKeys": "on",
+				"useSortedProperties": "on"
+			}
+		},
+		"enabled": true
+	},
+	"css": {
+		"formatter": {
+			"quoteStyle": "single"
+		},
+		"parser": {
+			"cssModules": true
+		}
+	},
+	"files": {
+		"includes": ["**", "!.next"]
+	},
+	"formatter": {
+		"enabled": true
+	},
+	"html": {
+		"formatter": {
+			"enabled": true
+		}
+	},
+	"javascript": {
+		"formatter": {
+			"jsxQuoteStyle": "single",
+			"quoteStyle": "single"
+		}
+	},
+	"linter": {
+		"enabled": true,
+		"rules": {
+			"a11y": {
+				"noAutofocus": "off",
+				"useSemanticElements": "off"
+			},
+			"complexity": {
+				"noUselessStringConcat": "error",
+				"noUselessUndefinedInitialization": "error",
+				"noVoid": "error",
+				"useDateNow": "error"
+			},
+			"correctness": {
+				"noConstantMathMinMaxClamp": "error",
+				"noUndeclaredDependencies": "off",
+				"noUnusedFunctionParameters": "error",
+				"noUnusedImports": "error",
+				"noUnusedPrivateClassMembers": "error",
+				"noUnusedVariables": {
+					"level": "error",
+					"options": {
+						"ignoreRestSiblings": true
+					}
+				},
+				"useHookAtTopLevel": "error"
+			},
+			"nursery": {
+				"noBitwiseOperators": "error",
+				"noFloatingPromises": "error",
+				"noImportCycles": "warn",
+				"noTsIgnore": "error",
+				"noUnwantedPolyfillio": "error",
+				"useConsistentObjectDefinition": {
+					"level": "error",
+					"options": {
+						"syntax": "shorthand"
+					}
+				},
+				"useSortedClasses": "error",
+				"useUniqueElementIds": "off"
+			},
+			"performance": {
+				"noBarrelFile": "warn",
+				"noNamespaceImport": "error",
+				"useTopLevelRegex": "error"
+			},
+			"recommended": true,
+			"style": {
+				"noDescendingSpecificity": "error",
+				"noDoneCallback": "error",
+				"noEnum": "error",
+				"noExportedImports": "error",
+				"noHeadElement": "error",
+				"noInferrableTypes": "error",
+				"noNestedTernary": "error",
+				"noUnusedTemplateLiteral": "error",
+				"noUselessElse": "error",
+				"noYodaExpression": "error",
+				"useAsConstAssertion": "error",
+				"useCollapsedElseIf": "error",
+				"useCollapsedIf": "error",
+				"useConsistentArrayType": {
+					"level": "error",
+					"options": {
+						"syntax": "generic"
+					}
+				},
+				"useConsistentBuiltinInstantiation": "error",
+				"useDefaultParameterLast": "error",
+				"useNumberNamespace": "error",
+				"useSelfClosingElements": "error",
+				"useShorthandAssign": "error",
+				"useThrowNewError": "error",
+				"useThrowOnlyError": "error"
+			},
+			"suspicious": {
+				"noConsole": {
+					"level": "error",
+					"options": {
+						"allow": ["error", "warn", "info", "debug"]
+					}
+				},
+				"noDocumentImportInPage": "error",
+				"noEmptyBlockStatements": "error",
+				"noFocusedTests": "warn",
+				"noHeadImportInDocument": "error",
+				"noMisplacedAssertion": "error",
+				"useAwait": "error",
+				"useErrorMessage": "error",
+				"useNumberToFixedDigitsArgument": "error"
+			}
+		}
+	},
+	"vcs": {
+		"clientKind": "git",
+		"enabled": true,
+		"useIgnoreFile": true
+	}
+}

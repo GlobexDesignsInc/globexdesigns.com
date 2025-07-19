@@ -1,16 +1,16 @@
 .main {
-	height: 960px;
 	position: relative;
 	width: 100%;
+	height: 960px;
 }
 
 .children {
-	display: flex;
-	inset: 0;
 	position: absolute;
-	z-index: 1
+	inset: 0;
+	z-index: 1;
+	display: flex;
 }
 
 .img {
-	object-fit: cover
+	object-fit: cover;
 }

@@ -1,13 +1,13 @@
 import './globals.css';
-import Analytics from '../components/Analytics';
-import {clsx} from 'clsx';
-import {Lato} from 'next/font/google';
-import {type Metadata} from 'next';
-import React from 'react';
+import { clsx } from 'clsx';
+import type { Metadata } from 'next';
+import { Lato } from 'next/font/google';
+import type React from 'react';
+import Analytics from '../components/Analytics/Analytics';
 import styles from './layout.module.css';
 
 type PropsType = {
-	children?: React.ReactNode,
+	children?: React.ReactNode;
 };
 
 const lato = Lato({
@@ -23,7 +23,10 @@ const latoSemi = Lato({
 });
 
 const Layout = ({ children }: PropsType) => (
-	<html className={clsx(styles.main, lato.variable, latoSemi.variable)} lang='en'>
+	<html
+		className={clsx(styles.main, lato.variable, latoSemi.variable)}
+		lang='en'
+	>
 		<body className={styles.body}>
 			{children}
 			<Analytics />
@@ -32,16 +35,30 @@ const Layout = ({ children }: PropsType) => (
 );
 
 const SITE_AUTHOR = 'Globex Designs, Inc.';
-const SITE_NAME = 'Globex Designs, Inc. - Vancouver Web Design & Software Development';
-const SITE_DESC = 'Globex Designs provides web design, software development and media production from Vancouver, Canada.';
+const SITE_NAME =
+	'Globex Designs, Inc. - Vancouver Web Design & Software Development';
+const SITE_DESC =
+	'Globex Designs provides web design, software development and media production from Vancouver, Canada.';
 
 export const metadata: Metadata = {
 	applicationName: SITE_NAME,
-	authors: [{name: SITE_AUTHOR}],
+	authors: [{ name: SITE_AUTHOR }],
 	creator: SITE_AUTHOR,
 	description: SITE_DESC,
 	generator: 'Next.js',
-	keywords: ['globex', 'designs', 'vancouver', 'web', 'design', 'software', 'development', 'media', 'production', 'agency', 'company'],
+	keywords: [
+		'globex',
+		'designs',
+		'vancouver',
+		'web',
+		'design',
+		'software',
+		'development',
+		'media',
+		'production',
+		'agency',
+		'company',
+	],
 	metadataBase: new URL('https://globexdesigns.com'),
 	openGraph: {
 		description: SITE_DESC,

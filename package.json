@@ -3,14 +3,13 @@
 	"version": "0.7.0",
 	"license": "MIT",
 	"scripts": {
+		"biome:check": "biome check --write",
 		"build": "next build",
 		"dev": "next --turbo",
-		"eslint": "eslint-globex .",
 		"packagelint": "prettier-package-json --use-tabs --write ./package.json",
 		"start": "next start",
-		"stylelint": "stylelint-globex app/**/*.css components/**/*.css",
-		"test": "pnpm typescript && pnpm eslint && pnpm stylelint && pnpm packagelint",
-		"typescript": "tsc --noEmit"
+		"test": "bun biome:check && bun packagelint && bun typescript",
+		"typescript": "tsgo --noEmit"
 	},
 	"dependencies": {
 		"clsx": "2.1.1",
@@ -21,16 +20,13 @@
 		"react-scroll": "1.9.3"
 	},
 	"devDependencies": {
-		"@eslint-config-globex/next": "7.6.4",
-		"@eslint-config-globex/react": "7.7.1",
-		"@eslint-config-globex/typescript": "7.8.0",
-		"@types/node": "22.16.5",
+		"@biomejs/biome": "2.1.2",
+		"@types/node": "24.0.15",
 		"@types/react": "19.1.8",
 		"@types/react-scroll": "1.8.10",
-		"eslint-config-globex": "7.7.2",
+		"@typescript/native-preview": "7.0.0-dev.20250719.1",
 		"lefthook": "1.12.2",
 		"prettier-package-json": "2.8.0",
-		"stylelint-config-globex": "3.14.1",
 		"typescript": "5.8.3"
 	}
 }
