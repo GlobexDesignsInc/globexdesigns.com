@@ -8,4 +8,4 @@ jobs:
     ping:
         runs-on: ubuntu-latest
         steps:
-        - run: curl --silent --show-error --fail https://globexdesigns.com
+        - run: curl --silent --show-error --fail https://www.globexdesigns.com
