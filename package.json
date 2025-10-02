@@ -20,7 +20,7 @@
 		"react-scroll": "1.9.3"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "2.2.4",
+		"@biomejs/biome": "2.2.5",
 		"@types/node": "24.6.2",
 		"@types/react": "19.2.0",
 		"@types/react-scroll": "1.8.10",
