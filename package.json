@@ -24,7 +24,7 @@
 		"@types/node": "24.7.2",
 		"@types/react": "19.2.2",
 		"@types/react-scroll": "1.8.10",
-		"@typescript/native-preview": "7.0.0-dev.20251014.1",
+		"@typescript/native-preview": "7.0.0-dev.20251015.1",
 		"lefthook": "1.13.6",
 		"prettier-package-json": "2.8.0",
 		"typescript": "5.9.3"
