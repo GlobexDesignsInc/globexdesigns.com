@@ -21,7 +21,7 @@
 	},
 	"devDependencies": {
 		"@biomejs/biome": "2.2.6",
-		"@types/node": "24.8.0",
+		"@types/node": "24.8.1",
 		"@types/react": "19.2.2",
 		"@types/react-scroll": "1.8.10",
 		"@typescript/native-preview": "7.0.0-dev.20251016.1",
